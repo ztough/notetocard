@@ -98,7 +98,6 @@
     <addaction name="action_9"/>
     <addaction name="action_7"/>
     <addaction name="actionqq"/>
-    <addaction name="action_10"/>
    </widget>
    <addaction name="menu_3"/>
    <addaction name="menu_sm_xml"/>
@@ -178,7 +177,7 @@
   </action>
   <action name="actionqq">
    <property name="text">
-    <string>续费软件</string>
+    <string>购买正式版</string>
    </property>
   </action>
   <action name="action_9">

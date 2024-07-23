@@ -643,7 +643,7 @@ void MainWindow::checkUpdate()
             QDateTime newVersion=QDateTime::fromString(update, "yyyy-MM-dd HH:mm:ss");
             QDateTime nowVersion=fileInfo.lastModified();
             if(newVersion>nowVersion){
-                setWindowTitle("NoteToCard笔记卡 检测到新版本，请点击帮助->更新软件。");
+                setWindowTitle("NoteToCard笔记卡 检测到新版本，请去官网下载最新版。");
 
             }
         }
