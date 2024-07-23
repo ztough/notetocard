@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#f1f7fe">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>ClipNoteEditor</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    .nav {
+      text-align: center;
+      margin: 20px 0
+    }
+
+    a {
+      color: #4285f4;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/qwebchannel.js"></script>
+  <script src="js/index.min.js"></script>
+</head>
+
+<body>
+
+  <div id="vditor" class="vditor vditor--fullscreen">
+
+  </div>
+  <script>
+    var bridge;
+    var channel = new QWebChannel(qt.webChannelTransport, function (channel) {
+      bridge = channel.objects.bridge;
+    });
+    var md;
+    var vditor = new Vditor('vditor', {
+      cdn: 'vditor',
+      toolbar: [
+        "emoji",
+        "headings",
+        "bold",
+        "italic",
+        "strike",
+        "link",
+        "|",
+        "list",
+        "ordered-list",
+        "check",
+        "outdent",
+        "indent",
+        "|",
+        "quote",
+        "line",
+        "code",
+        "inline-code",
+        "insert-before",
+        "insert-after",
+        "table",
+        "|",
+        "undo",
+        "redo",
+        "|",
+        "edit-mode",
+        {
+          name: 'flashcard',
+          toolbar: [
+            {
+               click() {
+                bridge.flashcard(md.getValue());
+              }
+            },
+            {
+               click() {
+                bridge.sm(md.getValue());
+              }
+            },
+            {
+               click() {
+                bridge.anki(md.getValue());
+              }
+            },
+            {
+               click() {
+                bridge.html(md.getValue());
+              }
+              
+            }
+          ],
+          tipPosition: 'e',
+          tip: '实时闪卡',
+          className: 'right',
+          icon: '<svg><use xlink:href="#vditor-icon-export"></use></svg>',
+
+        },
+        {
+          name: "more",
+          toolbar: [
+            "both",
+            "code-theme",
+            "content-theme",
+            "export",
+            "outline",
+            "preview"
+          ],
+        },
+      ],
+      after: () => {
+        md = this.vditor;
+        vditor.focus();
+        var buttons = document.querySelectorAll('button[data-type="undefined"]');
+        buttons[0].textContent="打开实时闪卡";
+        buttons[1].textContent="导出sm.xml";
+        buttons[2].textContent="同步anki";
+        buttons[3].textContent="自定义模板";
+      },
+      input: () => {
+        bridge.saveNote(this.vditor.getValue());
+      }
+    });
+
+    function setNote(note) {
+      if(md==undefined){
+        requestAnimationFrame(function(){setNote(note)});
+      }else{
+        md.setValue(note);
+      }
+      
+    }
+    function insertNote(note) {
+      md.insertValue(note);
+    }
+    function highlightText(searchText) {
+      if (searchText) {
+        var textNodes = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+        var current = '';
+        var span = null;
+        var highlighted = false;
+        while (textNodes.nextNode()) {
+          current = textNodes.currentNode;
+          if (current.nodeValue.indexOf(searchText) >= 0 && !highlighted) {
+            span = document.createElement('span');
+            span.className = 'highlight';
+            span.textContent = searchText;
+
+            var text = current.nodeValue;
+            var parentNode = current.parentNode;
+            var before = document.createTextNode(text.substring(0, text.indexOf(searchText)));
+            var after = document.createTextNode(text.substring(text.indexOf(searchText) + searchText.length));
+
+            parentNode.insertBefore(before, current);
+            parentNode.insertBefore(span, current);
+            parentNode.insertBefore(after, current);
+            parentNode.removeChild(current);
+
+            span.id = 'highlightedText'; 
+            highlighted = true;  
+          }
+        }
+     
+        if (highlighted) {
+          document.getElementById('highlightedText').scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+
+function sendText(){
+  var selection = window.getSelection();
+if (selection.rangeCount > 0) {
+    var range = selection.getRangeAt(0);
+    var cursorElement = range.commonAncestorContainer;
+    var text=cursorElement.textContent;
+    if(cursorElement.nextSibling){text+=cursorElement.nextSibling.textContent;}
+    bridge.checkTextItem(md.getValue(),text);
+}
+}
+function sendTexts(){
+var selection = window.getSelection();
+if (selection.rangeCount > 0) {
+  var range = selection.getRangeAt(0);
+  var cursorElement = range.commonAncestorContainer;
+  var text=cursorElement.textContent;
+  bridge.checkTextItem(md.getValue(),text);
+  sendText();
+}
+}
+var preElement = document.getElementById('vditor');
+
+preElement.addEventListener('click', function(event) {
+  setTimeout(function(){sendTexts();},100);
+});
+preElement.addEventListener('keydown', function() {
+  setTimeout(function(){sendText();},100);
+});
+preElement.addEventListener('input', function() {
+  setTimeout(function(){sendText();},100);
+});
+
+
+  </script>
+</body>
+
+</html>

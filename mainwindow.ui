@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="opaqueResize">
+       <bool>true</bool>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>true</bool>
+      </property>
+      <widget class="QTreeView" name="treeView"/>
+      <widget class="QSplitter" name="splitter">
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="handleWidth">
+        <number>0</number>
+       </property>
+       <widget class="QWebEngineView" name="webEngineView" native="true">
+        <property name="url" stdset="0">
+         <url>
+          <string>about:blank</string>
+         </url>
+        </property>
+       </widget>
+       <widget class="QWebEngineView" name="webEngineView_2" native="true">
+        <property name="url" stdset="0">
+         <url>
+          <string>about:blank</string>
+         </url>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_sm_xml">
+    <property name="title">
+     <string>导出</string>
+    </property>
+    <addaction name="actionsm_xml"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>同步</string>
+    </property>
+    <addaction name="action_anki"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action_4"/>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>打开</string>
+    </property>
+    <addaction name="actionmarkdown"/>
+    <addaction name="action_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_9"/>
+    <addaction name="action_7"/>
+    <addaction name="actionqq"/>
+    <addaction name="action_10"/>
+   </widget>
+   <addaction name="menu_3"/>
+   <addaction name="menu_sm_xml"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <action name="actionsm_xml">
+   <property name="text">
+    <string>sm.xml</string>
+   </property>
+  </action>
+  <action name="actionanki_apkg">
+   <property name="text">
+    <string>anki.apkg</string>
+   </property>
+  </action>
+  <action name="action_anki">
+   <property name="text">
+    <string>同步anki</string>
+   </property>
+  </action>
+  <action name="actionanki">
+   <property name="text">
+    <string>anki⭢笔记</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>自定义模板</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>符号设置</string>
+   </property>
+  </action>
+  <action name="actionAnki">
+   <property name="text">
+    <string>anki模板</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>笔记编辑器</string>
+   </property>
+  </action>
+  <action name="actionmarkdown">
+   <property name="text">
+    <string>Markdown</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>制卡语法</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>购买会员</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>打开教程</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>自动更新</string>
+   </property>
+  </action>
+  <action name="actionqq">
+   <property name="text">
+    <string>续费软件</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>打开官网</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>更新软件</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionsm_xml</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>exportSm()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>htmlTemplate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_anki</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>note2anki()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_3</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openNote()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionmarkdown</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>markdown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_4</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>gram()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_7</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>jiaochen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionqq</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>qq()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_9</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>gw()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_10</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>updateCheck()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>exportSm()</slot>
+  <slot>note2anki()</slot>
+  <slot>htmlTemplate()</slot>
+  <slot>openNote()</slot>
+  <slot>markdown()</slot>
+  <slot>gram()</slot>
+  <slot>buy()</slot>
+  <slot>out()</slot>
+  <slot>jiaochen()</slot>
+  <slot>autoUpdate()</slot>
+  <slot>qq()</slot>
+  <slot>gw()</slot>
+  <slot>updateCheck()</slot>
+ </slots>
+</ui>

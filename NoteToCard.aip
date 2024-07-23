@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="21.8.1" version="21.8.1" PreviousModules="appx" Modules="appx" RootPath="." Language="zh" Id="{4155CDCF-A7DE-43FA-9C21-04C4332F241D}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="Application_AssetGenDestFolderPath" Value="Generated Assets" ValueType="1"/>
+    <ROW Name="Application_AssetGenSourceFilePath" Value="..\..\NoteToCard\NoteToCard\logo.png" ValueType="1"/>
+    <ROW Name="AssetGenPkgDestFolderPath" Value="Generated Assets" ValueType="1"/>
+    <ROW Name="AssetGenPkgSourceFilePath" Value="..\..\NoteToCard\NoteToCard\logo.png" ValueType="1"/>
+    <ROW Name="HiddenItems" Value="TilesComponent;TilesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppXCfgComponent">
+    <ROW ID="Configuration" Order="1" OutputFolder="." OutputFileName="NoteToCard" ManifestFile="AppxManifest.xml" TargetOs="4" AutoUpdatesFrequency="0" AutoUpdatesOptions="0" ManifestBundleFile="AppxBundleManifest.xml" AppInstallerManifestFile="MsixAppInstallerData.xml"/>
+    <ROW ID="Configuration_1" Order="2" OutputFileName="x64" ParentBuild="Configuration" AutoUpdatesFrequency="0" AutoUpdatesOptions="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_zh.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW SignerDescription="[|ProductName]" SignOptions="7" SignTool="0" UseSha256="1" Thumbprint="71e335ca47f227ba92e8091a92484f9c4d8dac28 Subject: 4ECA5E58-B7D1-485A-94A8-DC22B44B0B95&#10;Issuer: 4ECA5E58-B7D1-485A-94A8-DC22B44B0B95&#10;Valid from 06/26/2024 to 06/26/2025" Subject="CN=4ECA5E58-B7D1-485A-94A8-DC22B44B0B95" Store="Machine\Root"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.GenericDirectoryComponent">
+    <ROW Id="1" Name="ROOT" Flags="1"/>
+    <ROW Id="2" Name="Assets" Parent="1" Flags="0"/>
+    <ROW Id="3" Name="generic" Parent="1" Flags="0"/>
+    <ROW Id="4" Name="iconengines" Parent="1" Flags="0"/>
+    <ROW Id="5" Name="imageformats" Parent="1" Flags="0"/>
+    <ROW Id="6" Name="networkinformation" Parent="1" Flags="0"/>
+    <ROW Id="7" Name="platforms" Parent="1" Flags="0"/>
+    <ROW Id="8" Name="position" Parent="1" Flags="0"/>
+    <ROW Id="9" Name="qmltooling" Parent="1" Flags="0"/>
+    <ROW Id="10" Name="resources" Parent="1" Flags="0"/>
+    <ROW Id="11" Name="styles" Parent="1" Flags="0"/>
+    <ROW Id="12" Name="tls" Parent="1" Flags="0"/>
+    <ROW Id="13" Name="translations" Parent="1" Flags="0"/>
+    <ROW Id="14" Name="qtwebengine_locales" Parent="13" Flags="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.GenericFileComponent">
+    <ROW Id="1" Name="StoreLogo.scale-100.png" Path="Generated Assets\StoreLogo.scale-100.png" ParentDir="2"/>
+    <ROW Id="2" Name="Square150x150Logo.scale-100.png" Path="Generated Assets\Square150x150Logo.scale-100.png" ParentDir="2"/>
+    <ROW Id="3" Name="Square30x30Logo.scale-100.png" Path="&lt;AI_RES&gt;appx\SmallLogo.png" ParentDir="2"/>
+    <ROW Id="4" Name="SplashScreen.scale-100.png" Path="Generated Assets\SplashScreen.scale-100.png" ParentDir="2"/>
+    <ROW Id="5" Name="default.html" Path="&lt;AI_RES&gt;appx\default.html" ParentDir="1"/>
+    <ROW Id="6" Name="Square44x44Logo.scale-100.png" Path="Generated Assets\Square44x44Logo.scale-100.png" ParentDir="2"/>
+    <ROW Id="7" Name="Square70x70Logo.scale-100.png" Path="&lt;AI_RES&gt;appx\MediumLogo81.png" ParentDir="2"/>
+    <ROW Id="8" Name="Square71x71Logo.scale-100.png" Path="Generated Assets\Square71x71Logo.scale-100.png" ParentDir="2"/>
+    <ROW Id="9" Name="Wide310x150Logo.scale-100.png" Path="Generated Assets\Wide310x150Logo.scale-100.png" ParentDir="2"/>
+    <ROW Id="10" Name="D3Dcompiler_47.dll" Path="NoteToCard\D3Dcompiler_47.dll" ParentDir="1"/>
+    <ROW Id="11" Name="qtuiotouchplugin.dll" Path="NoteToCard\generic\qtuiotouchplugin.dll" ParentDir="3"/>
+    <ROW Id="12" Name="qsvgicon.dll" Path="NoteToCard\iconengines\qsvgicon.dll" ParentDir="4"/>
+    <ROW Id="13" Name="qgif.dll" Path="NoteToCard\imageformats\qgif.dll" ParentDir="5"/>
+    <ROW Id="14" Name="qico.dll" Path="NoteToCard\imageformats\qico.dll" ParentDir="5"/>
+    <ROW Id="15" Name="qjpeg.dll" Path="NoteToCard\imageformats\qjpeg.dll" ParentDir="5"/>
+    <ROW Id="16" Name="qsvg.dll" Path="NoteToCard\imageformats\qsvg.dll" ParentDir="5"/>
+    <ROW Id="17" Name="qnetworklistmanager.dll" Path="NoteToCard\networkinformation\qnetworklistmanager.dll" ParentDir="6"/>
+    <ROW Id="18" Name="NoteToCard.exe" Path="NoteToCard\NoteToCard.exe" ParentDir="1"/>
+    <ROW Id="19" Name="opengl32sw.dll" Path="NoteToCard\opengl32sw.dll" ParentDir="1"/>
+    <ROW Id="20" Name="qwindows.dll" Path="NoteToCard\platforms\qwindows.dll" ParentDir="7"/>
+    <ROW Id="21" Name="qtposition_nmea.dll" Path="NoteToCard\position\qtposition_nmea.dll" ParentDir="8"/>
+    <ROW Id="22" Name="qtposition_positionpoll.dll" Path="NoteToCard\position\qtposition_positionpoll.dll" ParentDir="8"/>
+    <ROW Id="23" Name="qtposition_winrt.dll" Path="NoteToCard\position\qtposition_winrt.dll" ParentDir="8"/>
+    <ROW Id="24" Name="qmldbg_debugger.dll" Path="NoteToCard\qmltooling\qmldbg_debugger.dll" ParentDir="9"/>
+    <ROW Id="25" Name="qmldbg_inspector.dll" Path="NoteToCard\qmltooling\qmldbg_inspector.dll" ParentDir="9"/>
+    <ROW Id="26" Name="qmldbg_local.dll" Path="NoteToCard\qmltooling\qmldbg_local.dll" ParentDir="9"/>
+    <ROW Id="27" Name="qmldbg_messages.dll" Path="NoteToCard\qmltooling\qmldbg_messages.dll" ParentDir="9"/>
+    <ROW Id="28" Name="qmldbg_native.dll" Path="NoteToCard\qmltooling\qmldbg_native.dll" ParentDir="9"/>
+    <ROW Id="29" Name="qmldbg_nativedebugger.dll" Path="NoteToCard\qmltooling\qmldbg_nativedebugger.dll" ParentDir="9"/>
+    <ROW Id="30" Name="qmldbg_preview.dll" Path="NoteToCard\qmltooling\qmldbg_preview.dll" ParentDir="9"/>
+    <ROW Id="31" Name="qmldbg_profiler.dll" Path="NoteToCard\qmltooling\qmldbg_profiler.dll" ParentDir="9"/>
+    <ROW Id="32" Name="qmldbg_quickprofiler.dll" Path="NoteToCard\qmltooling\qmldbg_quickprofiler.dll" ParentDir="9"/>
+    <ROW Id="33" Name="qmldbg_server.dll" Path="NoteToCard\qmltooling\qmldbg_server.dll" ParentDir="9"/>
+    <ROW Id="34" Name="qmldbg_tcp.dll" Path="NoteToCard\qmltooling\qmldbg_tcp.dll" ParentDir="9"/>
+    <ROW Id="35" Name="Qt6Core.dll" Path="NoteToCard\Qt6Core.dll" ParentDir="1"/>
+    <ROW Id="36" Name="Qt6Gui.dll" Path="NoteToCard\Qt6Gui.dll" ParentDir="1"/>
+    <ROW Id="37" Name="Qt6Network.dll" Path="NoteToCard\Qt6Network.dll" ParentDir="1"/>
+    <ROW Id="38" Name="Qt6OpenGL.dll" Path="NoteToCard\Qt6OpenGL.dll" ParentDir="1"/>
+    <ROW Id="39" Name="Qt6Positioning.dll" Path="NoteToCard\Qt6Positioning.dll" ParentDir="1"/>
+    <ROW Id="40" Name="Qt6PrintSupport.dll" Path="NoteToCard\Qt6PrintSupport.dll" ParentDir="1"/>
+    <ROW Id="41" Name="Qt6Qml.dll" Path="NoteToCard\Qt6Qml.dll" ParentDir="1"/>
+    <ROW Id="42" Name="Qt6QmlModels.dll" Path="NoteToCard\Qt6QmlModels.dll" ParentDir="1"/>
+    <ROW Id="43" Name="Qt6Quick.dll" Path="NoteToCard\Qt6Quick.dll" ParentDir="1"/>
+    <ROW Id="44" Name="Qt6QuickWidgets.dll" Path="NoteToCard\Qt6QuickWidgets.dll" ParentDir="1"/>
+    <ROW Id="45" Name="Qt6Svg.dll" Path="NoteToCard\Qt6Svg.dll" ParentDir="1"/>
+    <ROW Id="46" Name="Qt6WebChannel.dll" Path="NoteToCard\Qt6WebChannel.dll" ParentDir="1"/>
+    <ROW Id="47" Name="Qt6WebEngineCore.dll" Path="NoteToCard\Qt6WebEngineCore.dll" ParentDir="1"/>
+    <ROW Id="48" Name="Qt6WebEngineWidgets.dll" Path="NoteToCard\Qt6WebEngineWidgets.dll" ParentDir="1"/>
+    <ROW Id="49" Name="Qt6Widgets.dll" Path="NoteToCard\Qt6Widgets.dll" ParentDir="1"/>
+    <ROW Id="50" Name="QtWebEngineProcess.exe" Path="NoteToCard\QtWebEngineProcess.exe" ParentDir="1"/>
+    <ROW Id="51" Name="icudtl.dat" Path="NoteToCard\resources\icudtl.dat" ParentDir="10"/>
+    <ROW Id="52" Name="qtwebengine_devtools_resources.pak" Path="NoteToCard\resources\qtwebengine_devtools_resources.pak" ParentDir="10"/>
+    <ROW Id="53" Name="qtwebengine_resources.pak" Path="NoteToCard\resources\qtwebengine_resources.pak" ParentDir="10"/>
+    <ROW Id="54" Name="qtwebengine_resources_100p.pak" Path="NoteToCard\resources\qtwebengine_resources_100p.pak" ParentDir="10"/>
+    <ROW Id="55" Name="qtwebengine_resources_200p.pak" Path="NoteToCard\resources\qtwebengine_resources_200p.pak" ParentDir="10"/>
+    <ROW Id="56" Name="qwindowsvistastyle.dll" Path="NoteToCard\styles\qwindowsvistastyle.dll" ParentDir="11"/>
+    <ROW Id="57" Name="qcertonlybackend.dll" Path="NoteToCard\tls\qcertonlybackend.dll" ParentDir="12"/>
+    <ROW Id="58" Name="qopensslbackend.dll" Path="NoteToCard\tls\qopensslbackend.dll" ParentDir="12"/>
+    <ROW Id="59" Name="qschannelbackend.dll" Path="NoteToCard\tls\qschannelbackend.dll" ParentDir="12"/>
+    <ROW Id="60" Name="am.pak" Path="NoteToCard\translations\qtwebengine_locales\am.pak" ParentDir="14"/>
+    <ROW Id="61" Name="ar.pak" Path="NoteToCard\translations\qtwebengine_locales\ar.pak" ParentDir="14"/>
+    <ROW Id="62" Name="bg.pak" Path="NoteToCard\translations\qtwebengine_locales\bg.pak" ParentDir="14"/>
+    <ROW Id="63" Name="bn.pak" Path="NoteToCard\translations\qtwebengine_locales\bn.pak" ParentDir="14"/>
+    <ROW Id="64" Name="ca.pak" Path="NoteToCard\translations\qtwebengine_locales\ca.pak" ParentDir="14"/>
+    <ROW Id="65" Name="cs.pak" Path="NoteToCard\translations\qtwebengine_locales\cs.pak" ParentDir="14"/>
+    <ROW Id="66" Name="da.pak" Path="NoteToCard\translations\qtwebengine_locales\da.pak" ParentDir="14"/>
+    <ROW Id="67" Name="de.pak" Path="NoteToCard\translations\qtwebengine_locales\de.pak" ParentDir="14"/>
+    <ROW Id="68" Name="el.pak" Path="NoteToCard\translations\qtwebengine_locales\el.pak" ParentDir="14"/>
+    <ROW Id="69" Name="en-GB.pak" Path="NoteToCard\translations\qtwebengine_locales\en-GB.pak" ParentDir="14"/>
+    <ROW Id="70" Name="en-US.pak" Path="NoteToCard\translations\qtwebengine_locales\en-US.pak" ParentDir="14"/>
+    <ROW Id="71" Name="es-419.pak" Path="NoteToCard\translations\qtwebengine_locales\es-419.pak" ParentDir="14"/>
+    <ROW Id="72" Name="es.pak" Path="NoteToCard\translations\qtwebengine_locales\es.pak" ParentDir="14"/>
+    <ROW Id="73" Name="et.pak" Path="NoteToCard\translations\qtwebengine_locales\et.pak" ParentDir="14"/>
+    <ROW Id="74" Name="fa.pak" Path="NoteToCard\translations\qtwebengine_locales\fa.pak" ParentDir="14"/>
+    <ROW Id="75" Name="fi.pak" Path="NoteToCard\translations\qtwebengine_locales\fi.pak" ParentDir="14"/>
+    <ROW Id="76" Name="fil.pak" Path="NoteToCard\translations\qtwebengine_locales\fil.pak" ParentDir="14"/>
+    <ROW Id="77" Name="fr.pak" Path="NoteToCard\translations\qtwebengine_locales\fr.pak" ParentDir="14"/>
+    <ROW Id="78" Name="gu.pak" Path="NoteToCard\translations\qtwebengine_locales\gu.pak" ParentDir="14"/>
+    <ROW Id="79" Name="he.pak" Path="NoteToCard\translations\qtwebengine_locales\he.pak" ParentDir="14"/>
+    <ROW Id="80" Name="hi.pak" Path="NoteToCard\translations\qtwebengine_locales\hi.pak" ParentDir="14"/>
+    <ROW Id="81" Name="hr.pak" Path="NoteToCard\translations\qtwebengine_locales\hr.pak" ParentDir="14"/>
+    <ROW Id="82" Name="hu.pak" Path="NoteToCard\translations\qtwebengine_locales\hu.pak" ParentDir="14"/>
+    <ROW Id="83" Name="id.pak" Path="NoteToCard\translations\qtwebengine_locales\id.pak" ParentDir="14"/>
+    <ROW Id="84" Name="it.pak" Path="NoteToCard\translations\qtwebengine_locales\it.pak" ParentDir="14"/>
+    <ROW Id="85" Name="ja.pak" Path="NoteToCard\translations\qtwebengine_locales\ja.pak" ParentDir="14"/>
+    <ROW Id="86" Name="kn.pak" Path="NoteToCard\translations\qtwebengine_locales\kn.pak" ParentDir="14"/>
+    <ROW Id="87" Name="ko.pak" Path="NoteToCard\translations\qtwebengine_locales\ko.pak" ParentDir="14"/>
+    <ROW Id="88" Name="lt.pak" Path="NoteToCard\translations\qtwebengine_locales\lt.pak" ParentDir="14"/>
+    <ROW Id="89" Name="lv.pak" Path="NoteToCard\translations\qtwebengine_locales\lv.pak" ParentDir="14"/>
+    <ROW Id="90" Name="ml.pak" Path="NoteToCard\translations\qtwebengine_locales\ml.pak" ParentDir="14"/>
+    <ROW Id="91" Name="mr.pak" Path="NoteToCard\translations\qtwebengine_locales\mr.pak" ParentDir="14"/>
+    <ROW Id="92" Name="ms.pak" Path="NoteToCard\translations\qtwebengine_locales\ms.pak" ParentDir="14"/>
+    <ROW Id="93" Name="nb.pak" Path="NoteToCard\translations\qtwebengine_locales\nb.pak" ParentDir="14"/>
+    <ROW Id="94" Name="nl.pak" Path="NoteToCard\translations\qtwebengine_locales\nl.pak" ParentDir="14"/>
+    <ROW Id="95" Name="pl.pak" Path="NoteToCard\translations\qtwebengine_locales\pl.pak" ParentDir="14"/>
+    <ROW Id="96" Name="pt-BR.pak" Path="NoteToCard\translations\qtwebengine_locales\pt-BR.pak" ParentDir="14"/>
+    <ROW Id="97" Name="pt-PT.pak" Path="NoteToCard\translations\qtwebengine_locales\pt-PT.pak" ParentDir="14"/>
+    <ROW Id="98" Name="ro.pak" Path="NoteToCard\translations\qtwebengine_locales\ro.pak" ParentDir="14"/>
+    <ROW Id="99" Name="ru.pak" Path="NoteToCard\translations\qtwebengine_locales\ru.pak" ParentDir="14"/>
+    <ROW Id="100" Name="sk.pak" Path="NoteToCard\translations\qtwebengine_locales\sk.pak" ParentDir="14"/>
+    <ROW Id="101" Name="sl.pak" Path="NoteToCard\translations\qtwebengine_locales\sl.pak" ParentDir="14"/>
+    <ROW Id="102" Name="sr.pak" Path="NoteToCard\translations\qtwebengine_locales\sr.pak" ParentDir="14"/>
+    <ROW Id="103" Name="sv.pak" Path="NoteToCard\translations\qtwebengine_locales\sv.pak" ParentDir="14"/>
+    <ROW Id="104" Name="sw.pak" Path="NoteToCard\translations\qtwebengine_locales\sw.pak" ParentDir="14"/>
+    <ROW Id="105" Name="ta.pak" Path="NoteToCard\translations\qtwebengine_locales\ta.pak" ParentDir="14"/>
+    <ROW Id="106" Name="te.pak" Path="NoteToCard\translations\qtwebengine_locales\te.pak" ParentDir="14"/>
+    <ROW Id="107" Name="th.pak" Path="NoteToCard\translations\qtwebengine_locales\th.pak" ParentDir="14"/>
+    <ROW Id="108" Name="tr.pak" Path="NoteToCard\translations\qtwebengine_locales\tr.pak" ParentDir="14"/>
+    <ROW Id="109" Name="uk.pak" Path="NoteToCard\translations\qtwebengine_locales\uk.pak" ParentDir="14"/>
+    <ROW Id="110" Name="vi.pak" Path="NoteToCard\translations\qtwebengine_locales\vi.pak" ParentDir="14"/>
+    <ROW Id="111" Name="zh-CN.pak" Path="NoteToCard\translations\qtwebengine_locales\zh-CN.pak" ParentDir="14"/>
+    <ROW Id="112" Name="zh-TW.pak" Path="NoteToCard\translations\qtwebengine_locales\zh-TW.pak" ParentDir="14"/>
+    <ROW Id="113" Name="qt_ar.qm" Path="NoteToCard\translations\qt_ar.qm" ParentDir="13"/>
+    <ROW Id="114" Name="qt_bg.qm" Path="NoteToCard\translations\qt_bg.qm" ParentDir="13"/>
+    <ROW Id="115" Name="qt_ca.qm" Path="NoteToCard\translations\qt_ca.qm" ParentDir="13"/>
+    <ROW Id="116" Name="qt_cs.qm" Path="NoteToCard\translations\qt_cs.qm" ParentDir="13"/>
+    <ROW Id="117" Name="qt_da.qm" Path="NoteToCard\translations\qt_da.qm" ParentDir="13"/>
+    <ROW Id="118" Name="qt_de.qm" Path="NoteToCard\translations\qt_de.qm" ParentDir="13"/>
+    <ROW Id="119" Name="qt_en.qm" Path="NoteToCard\translations\qt_en.qm" ParentDir="13"/>
+    <ROW Id="120" Name="qt_es.qm" Path="NoteToCard\translations\qt_es.qm" ParentDir="13"/>
+    <ROW Id="121" Name="qt_fa.qm" Path="NoteToCard\translations\qt_fa.qm" ParentDir="13"/>
+    <ROW Id="122" Name="qt_fi.qm" Path="NoteToCard\translations\qt_fi.qm" ParentDir="13"/>
+    <ROW Id="123" Name="qt_fr.qm" Path="NoteToCard\translations\qt_fr.qm" ParentDir="13"/>
+    <ROW Id="124" Name="qt_gd.qm" Path="NoteToCard\translations\qt_gd.qm" ParentDir="13"/>
+    <ROW Id="125" Name="qt_he.qm" Path="NoteToCard\translations\qt_he.qm" ParentDir="13"/>
+    <ROW Id="126" Name="qt_hr.qm" Path="NoteToCard\translations\qt_hr.qm" ParentDir="13"/>
+    <ROW Id="127" Name="qt_hu.qm" Path="NoteToCard\translations\qt_hu.qm" ParentDir="13"/>
+    <ROW Id="128" Name="qt_it.qm" Path="NoteToCard\translations\qt_it.qm" ParentDir="13"/>
+    <ROW Id="129" Name="qt_ja.qm" Path="NoteToCard\translations\qt_ja.qm" ParentDir="13"/>
+    <ROW Id="130" Name="qt_ko.qm" Path="NoteToCard\translations\qt_ko.qm" ParentDir="13"/>
+    <ROW Id="131" Name="qt_lv.qm" Path="NoteToCard\translations\qt_lv.qm" ParentDir="13"/>
+    <ROW Id="132" Name="qt_nl.qm" Path="NoteToCard\translations\qt_nl.qm" ParentDir="13"/>
+    <ROW Id="133" Name="qt_nn.qm" Path="NoteToCard\translations\qt_nn.qm" ParentDir="13"/>
+    <ROW Id="134" Name="qt_pl.qm" Path="NoteToCard\translations\qt_pl.qm" ParentDir="13"/>
+    <ROW Id="135" Name="qt_pt_BR.qm" Path="NoteToCard\translations\qt_pt_BR.qm" ParentDir="13"/>
+    <ROW Id="136" Name="qt_ru.qm" Path="NoteToCard\translations\qt_ru.qm" ParentDir="13"/>
+    <ROW Id="137" Name="qt_sk.qm" Path="NoteToCard\translations\qt_sk.qm" ParentDir="13"/>
+    <ROW Id="138" Name="qt_tr.qm" Path="NoteToCard\translations\qt_tr.qm" ParentDir="13"/>
+    <ROW Id="139" Name="qt_uk.qm" Path="NoteToCard\translations\qt_uk.qm" ParentDir="13"/>
+    <ROW Id="140" Name="qt_zh_CN.qm" Path="NoteToCard\translations\qt_zh_CN.qm" ParentDir="13"/>
+    <ROW Id="141" Name="qt_zh_TW.qm" Path="NoteToCard\translations\qt_zh_TW.qm" ParentDir="13"/>
+    <ROW Id="142" Name="StoreLogo.scale-125.png" Path="Generated Assets\StoreLogo.scale-125.png" ParentDir="2"/>
+    <ROW Id="143" Name="StoreLogo.scale-150.png" Path="Generated Assets\StoreLogo.scale-150.png" ParentDir="2"/>
+    <ROW Id="144" Name="StoreLogo.scale-200.png" Path="Generated Assets\StoreLogo.scale-200.png" ParentDir="2"/>
+    <ROW Id="145" Name="StoreLogo.scale-400.png" Path="Generated Assets\StoreLogo.scale-400.png" ParentDir="2"/>
+    <ROW Id="146" Name="Square71x71Logo.scale-125.png" Path="Generated Assets\Square71x71Logo.scale-125.png" ParentDir="2"/>
+    <ROW Id="147" Name="Square71x71Logo.scale-150.png" Path="Generated Assets\Square71x71Logo.scale-150.png" ParentDir="2"/>
+    <ROW Id="148" Name="Square71x71Logo.scale-200.png" Path="Generated Assets\Square71x71Logo.scale-200.png" ParentDir="2"/>
+    <ROW Id="149" Name="Square71x71Logo.scale-400.png" Path="Generated Assets\Square71x71Logo.scale-400.png" ParentDir="2"/>
+    <ROW Id="150" Name="Square150x150Logo.scale-125.png" Path="Generated Assets\Square150x150Logo.scale-125.png" ParentDir="2"/>
+    <ROW Id="151" Name="Square150x150Logo.scale-150.png" Path="Generated Assets\Square150x150Logo.scale-150.png" ParentDir="2"/>
+    <ROW Id="152" Name="Square150x150Logo.scale-200.png" Path="Generated Assets\Square150x150Logo.scale-200.png" ParentDir="2"/>
+    <ROW Id="153" Name="Square150x150Logo.scale-400.png" Path="Generated Assets\Square150x150Logo.scale-400.png" ParentDir="2"/>
+    <ROW Id="154" Name="Wide310x150Logo.scale-125.png" Path="Generated Assets\Wide310x150Logo.scale-125.png" ParentDir="2"/>
+    <ROW Id="155" Name="Wide310x150Logo.scale-150.png" Path="Generated Assets\Wide310x150Logo.scale-150.png" ParentDir="2"/>
+    <ROW Id="156" Name="Wide310x150Logo.scale-200.png" Path="Generated Assets\Wide310x150Logo.scale-200.png" ParentDir="2"/>
+    <ROW Id="157" Name="Wide310x150Logo.scale-400.png" Path="Generated Assets\Wide310x150Logo.scale-400.png" ParentDir="2"/>
+    <ROW Id="158" Name="Square310x310Logo.scale-100.png" Path="Generated Assets\Square310x310Logo.scale-100.png" ParentDir="2"/>
+    <ROW Id="159" Name="Square310x310Logo.scale-125.png" Path="Generated Assets\Square310x310Logo.scale-125.png" ParentDir="2"/>
+    <ROW Id="160" Name="Square310x310Logo.scale-150.png" Path="Generated Assets\Square310x310Logo.scale-150.png" ParentDir="2"/>
+    <ROW Id="161" Name="Square310x310Logo.scale-200.png" Path="Generated Assets\Square310x310Logo.scale-200.png" ParentDir="2"/>
+    <ROW Id="162" Name="Square310x310Logo.scale-400.png" Path="Generated Assets\Square310x310Logo.scale-400.png" ParentDir="2"/>
+    <ROW Id="163" Name="Square44x44Logo.targetsize-16.png" Path="Generated Assets\Square44x44Logo.targetsize-16.png" ParentDir="2"/>
+    <ROW Id="164" Name="Square44x44Logo.targetsize-16_altform-unplated.png" Path="Generated Assets\Square44x44Logo.targetsize-16_altform-unplated.png" ParentDir="2"/>
+    <ROW Id="165" Name="Square44x44Logo.targetsize-16_altform-lightunplated.png" Path="Generated Assets\Square44x44Logo.targetsize-16_altform-lightunplated.png" ParentDir="2"/>
+    <ROW Id="166" Name="Square44x44Logo.scale-125.png" Path="Generated Assets\Square44x44Logo.scale-125.png" ParentDir="2"/>
+    <ROW Id="167" Name="Square44x44Logo.targetsize-24.png" Path="Generated Assets\Square44x44Logo.targetsize-24.png" ParentDir="2"/>
+    <ROW Id="168" Name="Square44x44Logo.targetsize-24_altform-unplated.png" Path="Generated Assets\Square44x44Logo.targetsize-24_altform-unplated.png" ParentDir="2"/>
+    <ROW Id="169" Name="Square44x44Logo.targetsize-24_altform-lightunplated.png" Path="Generated Assets\Square44x44Logo.targetsize-24_altform-lightunplated.png" ParentDir="2"/>
+    <ROW Id="170" Name="Square44x44Logo.scale-150.png" Path="Generated Assets\Square44x44Logo.scale-150.png" ParentDir="2"/>
+    <ROW Id="171" Name="Square44x44Logo.targetsize-32.png" Path="Generated Assets\Square44x44Logo.targetsize-32.png" ParentDir="2"/>
+    <ROW Id="172" Name="Square44x44Logo.targetsize-32_altform-unplated.png" Path="Generated Assets\Square44x44Logo.targetsize-32_altform-unplated.png" ParentDir="2"/>
+    <ROW Id="173" Name="Square44x44Logo.targetsize-32_altform-lightunplated.png" Path="Generated Assets\Square44x44Logo.targetsize-32_altform-lightunplated.png" ParentDir="2"/>
+    <ROW Id="174" Name="Square44x44Logo.scale-200.png" Path="Generated Assets\Square44x44Logo.scale-200.png" ParentDir="2"/>
+    <ROW Id="175" Name="Square44x44Logo.targetsize-48.png" Path="Generated Assets\Square44x44Logo.targetsize-48.png" ParentDir="2"/>
+    <ROW Id="176" Name="Square44x44Logo.targetsize-48_altform-unplated.png" Path="Generated Assets\Square44x44Logo.targetsize-48_altform-unplated.png" ParentDir="2"/>
+    <ROW Id="177" Name="Square44x44Logo.targetsize-48_altform-lightunplated.png" Path="Generated Assets\Square44x44Logo.targetsize-48_altform-lightunplated.png" ParentDir="2"/>
+    <ROW Id="178" Name="Square44x44Logo.scale-400.png" Path="Generated Assets\Square44x44Logo.scale-400.png" ParentDir="2"/>
+    <ROW Id="179" Name="Square44x44Logo.targetsize-256.png" Path="Generated Assets\Square44x44Logo.targetsize-256.png" ParentDir="2"/>
+    <ROW Id="180" Name="Square44x44Logo.targetsize-256_altform-unplated.png" Path="Generated Assets\Square44x44Logo.targetsize-256_altform-unplated.png" ParentDir="2"/>
+    <ROW Id="181" Name="Square44x44Logo.targetsize-256_altform-lightunplated.png" Path="Generated Assets\Square44x44Logo.targetsize-256_altform-lightunplated.png" ParentDir="2"/>
+    <ROW Id="182" Name="SplashScreen.scale-125.png" Path="Generated Assets\SplashScreen.scale-125.png" ParentDir="2"/>
+    <ROW Id="183" Name="SplashScreen.scale-150.png" Path="Generated Assets\SplashScreen.scale-150.png" ParentDir="2"/>
+    <ROW Id="184" Name="SplashScreen.scale-200.png" Path="Generated Assets\SplashScreen.scale-200.png" ParentDir="2"/>
+    <ROW Id="185" Name="SplashScreen.scale-400.png" Path="Generated Assets\SplashScreen.scale-400.png" ParentDir="2"/>
+    <ROW Id="186" Name="BadgeLogo.scale-100.png" Path="Generated Assets\BadgeLogo.scale-100.png" ParentDir="2"/>
+    <ROW Id="187" Name="BadgeLogo.scale-125.png" Path="Generated Assets\BadgeLogo.scale-125.png" ParentDir="2"/>
+    <ROW Id="188" Name="BadgeLogo.scale-150.png" Path="Generated Assets\BadgeLogo.scale-150.png" ParentDir="2"/>
+    <ROW Id="189" Name="BadgeLogo.scale-200.png" Path="Generated Assets\BadgeLogo.scale-200.png" ParentDir="2"/>
+    <ROW Id="190" Name="BadgeLogo.scale-400.png" Path="Generated Assets\BadgeLogo.scale-400.png" ParentDir="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.GenericXmlAttributeComponent">
+    <ROW XmlAttribute="AllowUserInteraction" XmlElement="UX" Name="AllowUserInteraction" Flags="0" Order="0" Value="false"/>
+    <ROW XmlAttribute="AppNameInTitle" XmlElement="UX" Name="AppNameInTitle" Flags="0" Order="0" Value="false"/>
+    <ROW XmlAttribute="BackgroundColor" XmlElement="VisualElements" Name="BackgroundColor" Flags="0" Order="0" Value="#6393d4"/>
+    <ROW XmlAttribute="BadgeLogo" XmlElement="LockScreen" Name="BadgeLogo" Flags="0" Order="0" FileId="186"/>
+    <ROW XmlAttribute="Category_1" XmlElement="uapExtension" Name="Category" Flags="0" Order="0" Value="windows.protocol"/>
+    <ROW XmlAttribute="Description" XmlElement="VisualElements" Name="Description" Flags="0" Order="0" Value="NoteToCard是一款Markdown笔记实时生成记忆闪卡的应用。此应用依赖于 Microsoft Visual C++ 和 Ankiconnect 插件以提供主要功能。它致力于解决制卡过程中繁琐的操作以避免本末倒置，节省大量时间，提高工作效率。主要适用于Anki、SuperMemo场景，采用树状文本大纲解析递归技术生成结构化卡组，并加入了独创的原文回溯跳转链接可一键回顾原文，尽最大的可能解决知识碎片化问题，操作简单只需几个制卡语法即可，即使是初学者也能轻松上手。选择NoteToCard，轻松愉快地制作记忆闪卡。"/>
+    <ROW XmlAttribute="DisplayName" XmlElement="VisualElements" Name="DisplayName" Flags="0" Order="1" Value="NoteToCard"/>
+    <ROW XmlAttribute="EntryPoint" XmlElement="Application" Name="EntryPoint" Flags="0" Order="0" Value="Windows.FullTrustApplication"/>
+    <ROW XmlAttribute="Executable" XmlElement="Application" Name="Executable" Flags="0" Order="0" FileId="18"/>
+    <ROW XmlAttribute="HorizontalAlignment" XmlElement="LaunchWhenReady" Name="HorizontalAlignment" Flags="0" Order="0" Value="left"/>
+    <ROW XmlAttribute="HorizontalAlignment_1" XmlElement="Icon" Name="HorizontalAlignment" Flags="0" Order="0" Value="left"/>
+    <ROW XmlAttribute="HorizontalAlignment_2" XmlElement="Buttons" Name="HorizontalAlignment" Flags="0" Order="0" Value="left"/>
+    <ROW XmlAttribute="Id" XmlElement="Application" Name="Id" Flags="0" Order="0" Value="NoteToCard"/>
+    <ROW XmlAttribute="IgnorableNamespaces" XmlElement="AppInstallerUX" Name="IgnorableNamespaces" Flags="0" Order="0" Value="ux ux2"/>
+    <ROW XmlAttribute="Image" XmlElement="SplashScreen" Name="Image" Flags="0" Order="0" FileId="4"/>
+    <ROW XmlAttribute="IsSecondaryButtonAccent" XmlElement="Buttons" Name="IsSecondaryButtonAccent" Flags="0" Order="0" Value="false"/>
+    <ROW XmlAttribute="Language" XmlElement="Resource" Name="Language" Flags="0" Order="0" Value="zh-CN"/>
+    <ROW XmlAttribute="MaxVersionTested_1" XmlElement="TargetDeviceFamily_1" Name="MaxVersionTested" Flags="0" Order="0" Value="10.0.22631.0"/>
+    <ROW XmlAttribute="MinVersion_1" XmlElement="TargetDeviceFamily_1" Name="MinVersion" Flags="0" Order="0" Value="10.0.17763.0"/>
+    <ROW XmlAttribute="Mode" XmlElement="AppInformation" Name="Mode" Flags="0" Order="0" Value="flyout"/>
+    <ROW XmlAttribute="Name" XmlElement="Identity" Name="Name" Flags="0" Order="0" Value="ZToughSoftware.NoteToCard"/>
+    <ROW XmlAttribute="Name_1" XmlElement="uapProtocol" Name="Name" Flags="0" Order="0" Value="ntc"/>
+    <ROW XmlAttribute="Name_2" XmlElement="Capability" Name="Name" Flags="0" Order="0" Value="runFullTrust"/>
+    <ROW XmlAttribute="Name_3" XmlElement="TargetDeviceFamily_1" Name="Name" Flags="0" Order="0" Value="Windows.Desktop"/>
+    <ROW XmlAttribute="Notification" XmlElement="LockScreen" Name="Notification" Flags="0" Order="0" Value="badge"/>
+    <ROW XmlAttribute="Orientation" XmlElement="Buttons" Name="Orientation" Flags="0" Order="0" Value="horizontal"/>
+    <ROW XmlAttribute="PhoneProductId" XmlElement="PhoneIdentity" Name="PhoneProductId" Flags="0" Order="0" Value="09A47D0E-1E73-456F-BD51-9C68A8223E25"/>
+    <ROW XmlAttribute="PhonePublisherId" XmlElement="PhoneIdentity" Name="PhonePublisherId" Flags="0" Order="1" Value="00000000-0000-0000-0000-000000000000"/>
+    <ROW XmlAttribute="Preference_1" XmlElement="Rotation_1" Name="Preference" Flags="0" Order="0" Value="landscape"/>
+    <ROW XmlAttribute="PrimaryButtonMode" XmlElement="Buttons" Name="PrimaryButtonMode" Flags="0" Order="0" Value="normal"/>
+    <ROW XmlAttribute="ProcessorArchitecture" XmlElement="Identity" Name="ProcessorArchitecture" Flags="0" Order="0" Value="neutral"/>
+    <ROW XmlAttribute="Publisher" XmlElement="Identity" Name="Publisher" Flags="0" Order="0" Value="CN=4ECA5E58-B7D1-485A-94A8-DC22B44B0B95"/>
+    <ROW XmlAttribute="Scale" XmlElement="Resource_1" Name="Scale" Flags="0" Order="0" Value="100"/>
+    <ROW XmlAttribute="SecondaryButtonMode" XmlElement="Buttons" Name="SecondaryButtonMode" Flags="0" Order="0" Value="normal"/>
+    <ROW XmlAttribute="ShortName" XmlElement="DefaultTile" Name="ShortName" Flags="0" Order="0" Value="NoteToCard"/>
+    <ROW XmlAttribute="Size" XmlElement="Icon" Name="Size" Flags="0" Order="0" Value="default"/>
+    <ROW XmlAttribute="Square150x150Logo" XmlElement="VisualElements" Name="Square150x150Logo" Flags="0" Order="0" FileId="2"/>
+    <ROW XmlAttribute="Square310x310Logo" XmlElement="DefaultTile" Name="Square310x310Logo" Flags="0" Order="0" FileId="158"/>
+    <ROW XmlAttribute="Square44x44Logo" XmlElement="VisualElements" Name="Square44x44Logo" Flags="0" Order="0" FileId="6"/>
+    <ROW XmlAttribute="Square71x71Logo" XmlElement="DefaultTile" Name="Square71x71Logo" Flags="0" Order="0" FileId="8"/>
+    <ROW XmlAttribute="Tile" XmlElement="ShowOn" Name="Tile" Flags="0" Order="0" Value="square150x150Logo"/>
+    <ROW XmlAttribute="Tile_1" XmlElement="ShowOn_1" Name="Tile" Flags="0" Order="0" Value="wide310x150Logo"/>
+    <ROW XmlAttribute="Tile_2" XmlElement="ShowOn_2" Name="Tile" Flags="0" Order="0" Value="square310x310Logo"/>
+    <ROW XmlAttribute="Version" XmlElement="Identity" Name="Version" Flags="0" Order="0" Value="1.0.0.0"/>
+    <ROW XmlAttribute="Version_1" XmlElement="AppInstallerUX" Name="Version" Flags="0" Order="0" Value="1.0.0"/>
+    <ROW XmlAttribute="Wide310x150Logo" XmlElement="DefaultTile" Name="Wide310x150Logo" Flags="0" Order="0" FileId="9"/>
+    <ROW XmlAttribute="xmlns" XmlElement="Package" Name="xmlns" Flags="0" Order="0" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/2"/>
+    <ROW XmlAttribute="xmlns_1" XmlElement="AppInstallerUX" Name="xmlns" Flags="0" Order="0" Value="http://schemas.microsoft.com/msix/appinstallerux"/>
+    <ROW XmlAttribute="xmlnsbuild" XmlElement="Package" Name="xmlns:build" Flags="0" Order="1" Value="http://schemas.microsoft.com/developer/appx/2015/build"/>
+    <ROW XmlAttribute="xmlnscom" XmlElement="Package" Name="xmlns:com" Flags="0" Order="25" Value="http://schemas.microsoft.com/appx/manifest/com/windows10"/>
+    <ROW XmlAttribute="xmlnscom2" XmlElement="Package" Name="xmlns:com2" Flags="0" Order="26" Value="http://schemas.microsoft.com/appx/manifest/com/windows10/2"/>
+    <ROW XmlAttribute="xmlnscom3" XmlElement="Package" Name="xmlns:com3" Flags="0" Order="27" Value="http://schemas.microsoft.com/appx/manifest/com/windows10/3"/>
+    <ROW XmlAttribute="xmlnsdesktop" XmlElement="Package" Name="xmlns:desktop" Flags="0" Order="18" Value="http://schemas.microsoft.com/appx/manifest/desktop/windows10"/>
+    <ROW XmlAttribute="xmlnsdesktop2" XmlElement="Package" Name="xmlns:desktop2" Flags="0" Order="19" Value="http://schemas.microsoft.com/appx/manifest/desktop/windows10/2"/>
+    <ROW XmlAttribute="xmlnsdesktop3" XmlElement="Package" Name="xmlns:desktop3" Flags="0" Order="20" Value="http://schemas.microsoft.com/appx/manifest/desktop/windows10/3"/>
+    <ROW XmlAttribute="xmlnsdesktop4" XmlElement="Package" Name="xmlns:desktop4" Flags="0" Order="21" Value="http://schemas.microsoft.com/appx/manifest/desktop/windows10/4"/>
+    <ROW XmlAttribute="xmlnsdesktop5" XmlElement="Package" Name="xmlns:desktop5" Flags="0" Order="22" Value="http://schemas.microsoft.com/appx/manifest/desktop/windows10/5"/>
+    <ROW XmlAttribute="xmlnsdesktop6" XmlElement="Package" Name="xmlns:desktop6" Flags="0" Order="23" Value="http://schemas.microsoft.com/appx/manifest/desktop/windows10/6"/>
+    <ROW XmlAttribute="xmlnsmp" XmlElement="Package" Name="xmlns:mp" Flags="0" Order="2" Value="http://schemas.microsoft.com/appx/2014/phone/manifest"/>
+    <ROW XmlAttribute="xmlnsrescap" XmlElement="Package" Name="xmlns:rescap" Flags="0" Order="12" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"/>
+    <ROW XmlAttribute="xmlnsrescap2" XmlElement="Package" Name="xmlns:rescap2" Flags="0" Order="13" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities/2"/>
+    <ROW XmlAttribute="xmlnsrescap3" XmlElement="Package" Name="xmlns:rescap3" Flags="0" Order="14" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities/3"/>
+    <ROW XmlAttribute="xmlnsrescap4" XmlElement="Package" Name="xmlns:rescap4" Flags="0" Order="15" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities/4"/>
+    <ROW XmlAttribute="xmlnsrescap5" XmlElement="Package" Name="xmlns:rescap5" Flags="0" Order="16" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities/5"/>
+    <ROW XmlAttribute="xmlnsrescap6" XmlElement="Package" Name="xmlns:rescap6" Flags="0" Order="17" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities/6"/>
+    <ROW XmlAttribute="xmlnsserverpreview" XmlElement="Package" Name="xmlns:serverpreview" Flags="0" Order="24" Value="http://schemas.microsoft.com/appx/manifest/serverpreview/windows10"/>
+    <ROW XmlAttribute="xmlnsuap" XmlElement="Package" Name="xmlns:uap" Flags="0" Order="3" Value="http://schemas.microsoft.com/appx/manifest/uap/windows10"/>
+    <ROW XmlAttribute="xmlnsuap10" XmlElement="Package" Name="xmlns:uap10" Flags="0" Order="11" Value="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"/>
+    <ROW XmlAttribute="xmlnsuap2" XmlElement="Package" Name="xmlns:uap2" Flags="0" Order="4" Value="http://schemas.microsoft.com/appx/manifest/uap/windows10/2"/>
+    <ROW XmlAttribute="xmlnsuap3" XmlElement="Package" Name="xmlns:uap3" Flags="0" Order="5" Value="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"/>
+    <ROW XmlAttribute="xmlnsuap4" XmlElement="Package" Name="xmlns:uap4" Flags="0" Order="6" Value="http://schemas.microsoft.com/appx/manifest/uap/windows10/4"/>
+    <ROW XmlAttribute="xmlnsuap5" XmlElement="Package" Name="xmlns:uap5" Flags="0" Order="7" Value="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"/>
+    <ROW XmlAttribute="xmlnsuap6" XmlElement="Package" Name="xmlns:uap6" Flags="0" Order="8" Value="http://schemas.microsoft.com/appx/manifest/uap/windows10/6"/>
+    <ROW XmlAttribute="xmlnsuap7" XmlElement="Package" Name="xmlns:uap7" Flags="0" Order="9" Value="http://schemas.microsoft.com/appx/manifest/uap/windows10/7"/>
+    <ROW XmlAttribute="xmlnsuap8" XmlElement="Package" Name="xmlns:uap8" Flags="0" Order="10" Value="http://schemas.microsoft.com/appx/manifest/uap/windows10/8"/>
+    <ROW XmlAttribute="xmlnsux" XmlElement="AppInstallerUX" Name="xmlns:ux" Flags="0" Order="0" Value="http://schemas.microsoft.com/msix/appinstallerux"/>
+    <ROW XmlAttribute="xmlnsux2" XmlElement="AppInstallerUX" Name="xmlns:ux2" Flags="0" Order="0" Value="http://schemas.microsoft.com/msix/appinstallerux"/>
+    <ROW XmlAttribute="xmlnswincap" XmlElement="Package" Name="xmlns:wincap" Flags="0" Order="28" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/windowscapabilities"/>
+    <ROW XmlAttribute="xmlnswincap2" XmlElement="Package" Name="xmlns:wincap2" Flags="0" Order="29" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/windowscapabilities/2"/>
+    <ROW XmlAttribute="xmlnswincap3" XmlElement="Package" Name="xmlns:wincap3" Flags="0" Order="30" Value="http://schemas.microsoft.com/appx/manifest/foundation/windows10/windowscapabilities/3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.GenericXmlElementComponent">
+    <ROW XmlElement="AppInformation" ParentElement="AppInstallerUX" Name="AppInformation" Order="4" Flags="0" Type="0"/>
+    <ROW XmlElement="AppInstallerUX" Name="AppInstallerUX" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="Application" ParentElement="Applications" Name="Application" Order="0" Flags="0" Type="4"/>
+    <ROW XmlElement="Applications" ParentElement="Package" Name="Applications" Order="4" Flags="0" Type="3"/>
+    <ROW XmlElement="Bundle" Name="Bundle" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="Buttons" ParentElement="AppInstallerUX" Name="Buttons" Order="2" Flags="0" Type="0"/>
+    <ROW XmlElement="Capabilities" ParentElement="Package" Name="Capabilities" Order="6" Flags="0" Type="0"/>
+    <ROW XmlElement="Capability" ParentElement="Capabilities" Name="Capability" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="DefaultTile" ParentElement="VisualElements" Name="DefaultTile" Order="2" Flags="0" Type="0"/>
+    <ROW XmlElement="Dependencies" ParentElement="Package" Name="Dependencies" Order="5" Flags="30" Type="0"/>
+    <ROW XmlElement="Description" ParentElement="Properties" Name="Description" Order="3" Flags="0" Text="NoteToCard是一款Markdown笔记实时生成记忆闪卡的应用。此应用依赖于 Microsoft Visual C++ 和 Ankiconnect 插件以提供主要功能。它致力于解决制卡过程中繁琐的操作以避免本末倒置，节省大量时间，提高工作效率。主要适用于Anki、SuperMemo场景，采用树状文本大纲解析递归技术生成结构化卡组，并加入了独创的原文回溯跳转链接可一键回顾原文，尽最大的可能解决知识碎片化问题，操作简单只需几个制卡语法即可，即使是初学者也能轻松上手。选择NoteToCard，轻松愉快地制作记忆闪卡。" Type="0"/>
+    <ROW XmlElement="DisplayName" ParentElement="Properties" Name="DisplayName" Order="0" Flags="0" Text="NoteToCard" Type="1"/>
+    <ROW XmlElement="Extensions" ParentElement="Application" Name="Extensions" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="Icon" ParentElement="AppInstallerUX" Name="Icon" Order="5" Flags="0" Type="0"/>
+    <ROW XmlElement="Identity" ParentElement="Package" Name="Identity" Order="0" Flags="0" Type="1"/>
+    <ROW XmlElement="InitialRotationPreference" ParentElement="VisualElements" Name="InitialRotationPreference" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="LaunchWhenReady" ParentElement="AppInstallerUX" Name="LaunchWhenReady" Order="3" Flags="0" Type="0"/>
+    <ROW XmlElement="LockScreen" ParentElement="VisualElements" Name="LockScreen" Order="3" Flags="0" Type="0"/>
+    <ROW XmlElement="Logo" ParentElement="Properties" Name="Logo" Order="2" Flags="0" FileId="1" Type="0"/>
+    <ROW XmlElement="Package" Name="Package" Order="0" Flags="30" Type="6"/>
+    <ROW XmlElement="PhoneIdentity" ParentElement="Package" Name="PhoneIdentity" Order="5" Flags="30" Type="0"/>
+    <ROW XmlElement="Properties" ParentElement="Package" Name="Properties" Order="1" Flags="0" Type="1"/>
+    <ROW XmlElement="PublisherDisplayName" ParentElement="Properties" Name="PublisherDisplayName" Order="1" Flags="0" Text="ZToughSoftware" Type="1"/>
+    <ROW XmlElement="Resource" ParentElement="Resources" Name="Resource" Order="2" Flags="0" Type="0"/>
+    <ROW XmlElement="Resource_1" ParentElement="Resources" Name="Resource" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="Resources" ParentElement="Package" Name="Resources" Order="3" Flags="0" Type="1"/>
+    <ROW XmlElement="Rotation_1" ParentElement="InitialRotationPreference" Name="Rotation" Order="1" Flags="0" Type="1"/>
+    <ROW XmlElement="ShowNameOnTiles" ParentElement="DefaultTile" Name="ShowNameOnTiles" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="ShowOn" ParentElement="ShowNameOnTiles" Name="ShowOn" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="ShowOn_1" ParentElement="ShowNameOnTiles" Name="ShowOn" Order="2" Flags="0" Type="0"/>
+    <ROW XmlElement="ShowOn_2" ParentElement="ShowNameOnTiles" Name="ShowOn" Order="3" Flags="0" Type="0"/>
+    <ROW XmlElement="SplashScreen" ParentElement="VisualElements" Name="SplashScreen" Order="0" Flags="0" Type="1"/>
+    <ROW XmlElement="TargetDeviceFamily_1" ParentElement="Dependencies" Name="TargetDeviceFamily" Order="1" Flags="0" Type="28"/>
+    <ROW XmlElement="UX" ParentElement="AppInstallerUX" Name="UX" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="VisualElements" ParentElement="Application" Name="VisualElements" Order="0" Flags="0" Type="1"/>
+    <ROW XmlElement="uapDisplayName" ParentElement="uapProtocol" Name="uap:DisplayName" Order="2" Flags="0" Text="ntc" Type="0"/>
+    <ROW XmlElement="uapExtension" ParentElement="Extensions" Name="uap:Extension" Order="2" Flags="0" Type="0"/>
+    <ROW XmlElement="uapLogo" ParentElement="uapProtocol" Name="uap:Logo" Order="1" Flags="0" Text="ROOT\Assets\Square150x150Logo.png" Type="0"/>
+    <ROW XmlElement="uapProtocol" ParentElement="uapExtension" Name="uap:Protocol" Order="1" Flags="0" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.GenericXmlFileComponent">
+    <ROW XmlFile="AppxBundleManifest.xml" FileName="AppxBundleManifest.xml" RootElement="Bundle" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+    <ROW XmlFile="AppxManifest.xml" FileName="AppxManifest.xml" RootElement="Package" Flags="89" Version="1.0" Encoding="utf-8" IndentUnits="2"/>
+    <ROW XmlFile="MsixAppInstallerData.xml" FileName="MsixAppInstallerData.xml" RootElement="AppInstallerUX" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+  </COMPONENT>
+</DOCUMENT>

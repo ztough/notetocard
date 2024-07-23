@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ssprotect>
+	<base_info>
+		<app>Virbox Protector 3 (LM)</app>
+		<version>3.3.1.20115</version>
+	</base_info>
+	<developer>
+		<id>0800000000002757</id>
+	</developer>
+	<senseshield>
+		<path>D:\senseshield\sdk</path>
+	</senseshield>
+	<runtime>
+		<debug>0</debug>
+		<outside>0</outside>
+		<compatible_with_electron>0</compatible_with_electron>
+	</runtime>
+	<license>
+		<mode>12</mode>
+		<id>10001</id>
+		<password>M&gt;KIM?J&gt;6?&gt;JNI7M8INK98?N7&lt;;:8NL&lt;</password>
+		<serial></serial>
+	</license>
+	<file>
+		<path>E:\ZTough\Release\NoteToCard\NoteToCard\NoteToCard.exe</path>
+	</file>
+	<option>
+		<import>1</import>
+		<zip>1</zip>
+		<memory_check>1</memory_check>
+		<encrypt>1</encrypt>
+		<anti_debugging>1</anti_debugging>
+		<vm_detection>0</vm_detection>
+		<interval>60</interval>
+		<unplug>0</unplug>
+	</option>
+	<sign />
+	<message language="1" show="1" freeze="1" showloginbutton="1" timeout="0" reminder_interval="0">
+		<title>NoteToCard笔记卡 官网：https://ztough.cn</title>
+		<cloud>
+			<SENSE66000101>登录的账号或者密码错误</SENSE66000101>
+			<SENSE66000102>参数错误</SENSE66000102>
+			<SENSE66000103>用户登录服务未启动</SENSE66000103>
+			<SENSE66000104>登录超时</SENSE66000104>
+			<SENSE66000105>获取用户信息失败</SENSE66000105>
+			<SENSE66000106>未知错误</SENSE66000106>
+		</cloud>
+		<define>
+			<SENSE13000020>找不到许可，请去官网购买许可。</SENSE13000020>
+			<SENSE22000011>错误码{ERROR}:许可尚不可用，{ENTER}运行此程序需要读取{LICNO}号许可，此计算机上该许可尚不可用，程序无法继续运行。请联系销售商更新许可。</SENSE22000011>
+			<SENSE22000012>许可已到期，请去官网续费许可。</SENSE22000012>
+			<SENSE22000015>错误码{ERROR}:许可达到最大并发数，{ENTER}运行此程序需要读取{LICNO}号许可，此计算机上该许可已经达到最大并发计数，程序无法继续运行。请联系销售商更新许可。</SENSE22000015>
+			<SENSE66000002>0</SENSE66000002>
+			<SENSE66000003>0</SENSE66000003>
+			<SENSE66000004>剩余使用次数：{COUNT}次{ENTER}</SENSE66000004>
+			<SENSE66000005>剩余使用时间：{DAY}天{ENTER}</SENSE66000005>
+			<SENSE66000007>客户您好，您的加密锁(S/N:{WSN})支持丢锁补锁功能，还有{DAY}天过期，请及时通过Virbox用户工具激活该加密锁，否则将影响您软件的使用。</SENSE66000007>
+		</define>
+		<login>
+			<SENSE70000001>NoteToCard笔记卡 官网：https://ztough.cn</SENSE70000001>
+			<SENSE70000002>邮箱</SENSE70000002>
+			<SENSE70000003>密码</SENSE70000003>
+			<SENSE70000006>登录</SENSE70000006>
+			<SENSE70000007>取消</SENSE70000007>
+			<SENSE70000008>注册</SENSE70000008>
+			<SENSE70000009>https://e.lm.virbox.com/activity/register.html?developerGuid=7B77896D0EF54E1F6DC89686EFDA77F95D4866F00103F9C1C86EB35EADEE732F60DE17929C9E236000918AE8E3967AEA</SENSE70000009>
+			<SENSE70000010>忘记密码</SENSE70000010>
+			<SENSE70000011>https://auth.senseyun.com/forgot.jsp?utm_source=client</SENSE70000011>
+			<SENSE70000012></SENSE70000012>
+			<SENSE70000013></SENSE70000013>
+		</login>
+		<error>
+			<SENSE30000003>许可未登录或已超时</SENSE30000003>
+			<SENSE2400000d>检测到许可会话失效，请插入加密锁或者排查网络锁连接故障</SENSE2400000d>
+			<SENSE02000003>请先安装许可证工具并保持运行，之后再打开此程序</SENSE02000003>
+			<SENSE13000020>当前账号没有该软件对应的许可请去官网(https://ztough.cn)购买</SENSE13000020>
+			<SENSE13000030>请登录账号</SENSE13000030>
+		</error>
+	</message>
+	<plugin>
+		<ds enable="0">
+			<x86 file="ds_windows_x86.dll"></x86>
+			<x64 file="ds_windows_x64.dll"></x64>
+			<option>
+				<pwd type="password">1F282DD608AEF313F120E87D19DEBD22</pwd>
+			</option>
+		</ds>
+	</plugin>
+	<function>
+		<SENSENODEFUNC1 type="function" name="SENSE00001000">
+			<flags>2</flags>
+		</SENSENODEFUNC1>
+		<SENSENODEFUNC2 type="function" name="SENSE00001030">
+			<flags>2</flags>
+		</SENSENODEFUNC2>
+		<SENSENODEFUNC3 type="function" name="SENSE00001060">
+			<flags>2</flags>
+		</SENSENODEFUNC3>
+		<SENSENODEFUNC4 type="function" name="SENSE00001080">
+			<flags>2</flags>
+		</SENSENODEFUNC4>
+		<SENSENODEFUNC5 type="function" name="SENSE00001100">
+			<flags>2</flags>
+		</SENSENODEFUNC5>
+		<SENSENODEFUNC6 type="function" name="SENSE00001140">
+			<flags>2</flags>
+		</SENSENODEFUNC6>
+		<SENSENODEFUNC7 type="function" name="SENSE00001170">
+			<flags>2</flags>
+		</SENSENODEFUNC7>
+		<SENSENODEFUNC8 type="function" name="SENSE00001230">
+			<flags>2</flags>
+		</SENSENODEFUNC8>
+		<SENSENODEFUNC9 type="function" name="SENSE00001270">
+			<flags>2</flags>
+		</SENSENODEFUNC9>
+		<SENSENODEFUNC10 type="function" name="SENSE000012f0">
+			<flags>2</flags>
+		</SENSENODEFUNC10>
+		<SENSENODEFUNC11 type="function" name="SENSE00001400">
+			<flags>2</flags>
+		</SENSENODEFUNC11>
+		<SENSENODEFUNC12 type="function" name="SENSE00001480">
+			<flags>2</flags>
+		</SENSENODEFUNC12>
+		<SENSENODEFUNC13 type="function" name="SENSE00001500">
+			<flags>2</flags>
+		</SENSENODEFUNC13>
+		<SENSENODEFUNC14 type="function" name="SENSE00001670">
+			<flags>2</flags>
+		</SENSENODEFUNC14>
+		<SENSENODEFUNC15 type="function" name="SENSE000016f0">
+			<flags>2</flags>
+		</SENSENODEFUNC15>
+		<SENSENODEFUNC16 type="function" name="SENSE00001adc">
+			<flags>2</flags>
+		</SENSENODEFUNC16>
+		<SENSENODEFUNC17 type="function" name="SENSE00001c80">
+			<flags>2</flags>
+		</SENSENODEFUNC17>
+		<SENSENODEFUNC18 type="function" name="SENSE00001d20">
+			<flags>2</flags>
+		</SENSENODEFUNC18>
+		<SENSENODEFUNC19 type="function" name="SENSE00001dc0">
+			<flags>2</flags>
+		</SENSENODEFUNC19>
+		<SENSENODEFUNC20 type="function" name="SENSE00001e60">
+			<flags>2</flags>
+		</SENSENODEFUNC20>
+		<SENSENODEFUNC21 type="function" name="SENSE00001f00">
+			<flags>2</flags>
+		</SENSENODEFUNC21>
+		<SENSENODEFUNC22 type="function" name="SENSE00001fa0">
+			<flags>2</flags>
+		</SENSENODEFUNC22>
+		<SENSENODEFUNC23 type="function" name="SENSE00002040">
+			<flags>2</flags>
+		</SENSENODEFUNC23>
+		<SENSENODEFUNC24 type="function" name="SENSE000020e0">
+			<flags>2</flags>
+		</SENSENODEFUNC24>
+		<SENSENODEFUNC25 type="function" name="SENSE00002180">
+			<flags>2</flags>
+		</SENSENODEFUNC25>
+		<SENSENODEFUNC26 type="function" name="SENSE00002910">
+			<flags>2</flags>
+		</SENSENODEFUNC26>
+		<SENSENODEFUNC27 type="function" name="SENSE00002d54">
+			<flags>2</flags>
+		</SENSENODEFUNC27>
+		<SENSENODEFUNC28 type="function" name="SENSE00002f00">
+			<flags>2</flags>
+		</SENSENODEFUNC28>
+		<SENSENODEFUNC29 type="function" name="SENSE00003030">
+			<flags>2</flags>
+		</SENSENODEFUNC29>
+		<SENSENODEFUNC30 type="function" name="SENSE00003160">
+			<flags>2</flags>
+		</SENSENODEFUNC30>
+		<SENSENODEFUNC31 type="function" name="SENSE00003210">
+			<flags>2</flags>
+		</SENSENODEFUNC31>
+		<SENSENODEFUNC32 type="function" name="SENSE00003460">
+			<flags>2</flags>
+		</SENSENODEFUNC32>
+		<SENSENODEFUNC33 type="function" name="SENSE00003620">
+			<flags>2</flags>
+		</SENSENODEFUNC33>
+		<SENSENODEFUNC34 type="function" name="SENSE000036d0">
+			<flags>2</flags>
+		</SENSENODEFUNC34>
+		<SENSENODEFUNC35 type="function" name="SENSE00003e80">
+			<flags>2</flags>
+		</SENSENODEFUNC35>
+		<SENSENODEFUNC36 type="function" name="SENSE00003ea0">
+			<flags>2</flags>
+		</SENSENODEFUNC36>
+		<SENSENODEFUNC37 type="function" name="SENSE00003ec0">
+			<flags>2</flags>
+		</SENSENODEFUNC37>
+		<SENSENODEFUNC38 type="function" name="SENSE00003ef0">
+			<flags>2</flags>
+		</SENSENODEFUNC38>
+		<SENSENODEFUNC39 type="function" name="SENSE00003f80">
+			<flags>2</flags>
+		</SENSENODEFUNC39>
+		<SENSENODEFUNC40 type="function" name="SENSE00003fc0">
+			<flags>2</flags>
+		</SENSENODEFUNC40>
+		<SENSENODEFUNC41 type="function" name="SENSE00004150">
+			<flags>2</flags>
+		</SENSENODEFUNC41>
+		<SENSENODEFUNC42 type="function" name="SENSE000042d0">
+			<flags>2</flags>
+		</SENSENODEFUNC42>
+		<SENSENODEFUNC43 type="function" name="SENSE000044b0">
+			<flags>2</flags>
+		</SENSENODEFUNC43>
+		<SENSENODEFUNC44 type="function" name="SENSE00004730">
+			<flags>2</flags>
+		</SENSENODEFUNC44>
+		<SENSENODEFUNC45 type="function" name="SENSE000047d0">
+			<flags>2</flags>
+		</SENSENODEFUNC45>
+		<SENSENODEFUNC46 type="function" name="SENSE00004820">
+			<flags>2</flags>
+		</SENSENODEFUNC46>
+		<SENSENODEFUNC47 type="function" name="SENSE00004900">
+			<flags>2</flags>
+		</SENSENODEFUNC47>
+		<SENSENODEFUNC48 type="function" name="SENSE00004b60">
+			<flags>2</flags>
+		</SENSENODEFUNC48>
+		<SENSENODEFUNC49 type="function" name="SENSE00004cd0">
+			<flags>2</flags>
+		</SENSENODEFUNC49>
+		<SENSENODEFUNC50 type="function" name="SENSE00005240">
+			<flags>2</flags>
+		</SENSENODEFUNC50>
+		<SENSENODEFUNC51 type="function" name="SENSE00005300">
+			<flags>2</flags>
+		</SENSENODEFUNC51>
+		<SENSENODEFUNC52 type="function" name="SENSE000053b0">
+			<flags>2</flags>
+		</SENSENODEFUNC52>
+		<SENSENODEFUNC53 type="function" name="SENSE00005530">
+			<flags>2</flags>
+		</SENSENODEFUNC53>
+		<SENSENODEFUNC54 type="function" name="SENSE000056a0">
+			<flags>2</flags>
+		</SENSENODEFUNC54>
+		<SENSENODEFUNC55 type="function" name="SENSE00005860">
+			<flags>2</flags>
+		</SENSENODEFUNC55>
+		<SENSENODEFUNC56 type="function" name="SENSE00005a20">
+			<flags>2</flags>
+		</SENSENODEFUNC56>
+		<SENSENODEFUNC57 type="function" name="SENSE00005aa0">
+			<flags>2</flags>
+		</SENSENODEFUNC57>
+		<SENSENODEFUNC58 type="function" name="SENSE00005b10">
+			<flags>2</flags>
+		</SENSENODEFUNC58>
+		<SENSENODEFUNC59 type="function" name="SENSE00005b60">
+			<flags>2</flags>
+		</SENSENODEFUNC59>
+		<SENSENODEFUNC60 type="function" name="SENSE00005ba0">
+			<flags>2</flags>
+		</SENSENODEFUNC60>
+		<SENSENODEFUNC61 type="function" name="SENSE00005c40">
+			<flags>2</flags>
+		</SENSENODEFUNC61>
+		<SENSENODEFUNC62 type="function" name="SENSE00005c90">
+			<flags>2</flags>
+		</SENSENODEFUNC62>
+		<SENSENODEFUNC63 type="function" name="SENSE00006270">
+			<flags>2</flags>
+		</SENSENODEFUNC63>
+		<SENSENODEFUNC64 type="function" name="SENSE000062b0">
+			<flags>2</flags>
+		</SENSENODEFUNC64>
+		<SENSENODEFUNC65 type="function" name="SENSE000062f0">
+			<flags>2</flags>
+		</SENSENODEFUNC65>
+		<SENSENODEFUNC66 type="function" name="SENSE00006320">
+			<flags>2</flags>
+		</SENSENODEFUNC66>
+		<SENSENODEFUNC67 type="function" name="SENSE00006360">
+			<flags>2</flags>
+		</SENSENODEFUNC67>
+		<SENSENODEFUNC68 type="function" name="SENSE000063e0">
+			<flags>2</flags>
+		</SENSENODEFUNC68>
+		<SENSENODEFUNC69 type="function" name="SENSE00006450">
+			<flags>2</flags>
+		</SENSENODEFUNC69>
+		<SENSENODEFUNC70 type="function" name="SENSE000064e0">
+			<flags>2</flags>
+		</SENSENODEFUNC70>
+		<SENSENODEFUNC71 type="function" name="SENSE000065b0">
+			<flags>2</flags>
+		</SENSENODEFUNC71>
+		<SENSENODEFUNC72 type="function" name="SENSE00006610">
+			<flags>2</flags>
+		</SENSENODEFUNC72>
+		<SENSENODEFUNC73 type="function" name="SENSE00006640">
+			<flags>2</flags>
+		</SENSENODEFUNC73>
+		<SENSENODEFUNC74 type="function" name="SENSE00006660">
+			<flags>2</flags>
+		</SENSENODEFUNC74>
+		<SENSENODEFUNC75 type="function" name="SENSE000066a0">
+			<flags>2</flags>
+		</SENSENODEFUNC75>
+		<SENSENODEFUNC76 type="function" name="SENSE000066d0">
+			<flags>2</flags>
+		</SENSENODEFUNC76>
+		<SENSENODEFUNC77 type="function" name="SENSE00006710">
+			<flags>2</flags>
+		</SENSENODEFUNC77>
+		<SENSENODEFUNC78 type="function" name="SENSE00006730">
+			<flags>2</flags>
+		</SENSENODEFUNC78>
+		<SENSENODEFUNC79 type="function" name="SENSE000067e0">
+			<flags>2</flags>
+		</SENSENODEFUNC79>
+		<SENSENODEFUNC80 type="function" name="SENSE00006880">
+			<flags>2</flags>
+		</SENSENODEFUNC80>
+		<SENSENODEFUNC81 type="function" name="SENSE000068d0">
+			<flags>2</flags>
+		</SENSENODEFUNC81>
+		<SENSENODEFUNC82 type="function" name="SENSE00006950">
+			<flags>2</flags>
+		</SENSENODEFUNC82>
+		<SENSENODEFUNC83 type="function" name="SENSE00006ad8">
+			<flags>2</flags>
+		</SENSENODEFUNC83>
+		<SENSENODEFUNC84 type="function" name="SENSE00006de0">
+			<flags>2</flags>
+		</SENSENODEFUNC84>
+		<SENSENODEFUNC85 type="function" name="SENSE00006e30">
+			<flags>2</flags>
+		</SENSENODEFUNC85>
+		<SENSENODEFUNC86 type="function" name="SENSE00006e50">
+			<flags>2</flags>
+		</SENSENODEFUNC86>
+		<SENSENODEFUNC87 type="function" name="SENSE00006e70">
+			<flags>2</flags>
+		</SENSENODEFUNC87>
+		<SENSENODEFUNC88 type="function" name="SENSE00006e80">
+			<flags>2</flags>
+		</SENSENODEFUNC88>
+		<SENSENODEFUNC89 type="function" name="SENSE00006ed0">
+			<flags>2</flags>
+		</SENSENODEFUNC89>
+		<SENSENODEFUNC90 type="function" name="SENSE00007150">
+			<flags>2</flags>
+		</SENSENODEFUNC90>
+		<SENSENODEFUNC91 type="function" name="SENSE00007170">
+			<flags>2</flags>
+		</SENSENODEFUNC91>
+		<SENSENODEFUNC92 type="function" name="SENSE00007330">
+			<flags>2</flags>
+		</SENSENODEFUNC92>
+		<SENSENODEFUNC93 type="function" name="SENSE00007640">
+			<flags>2</flags>
+		</SENSENODEFUNC93>
+		<SENSENODEFUNC94 type="function" name="SENSE000077f0">
+			<flags>2</flags>
+		</SENSENODEFUNC94>
+		<SENSENODEFUNC95 type="function" name="SENSE000078f0">
+			<flags>2</flags>
+		</SENSENODEFUNC95>
+		<SENSENODEFUNC96 type="function" name="SENSE00007bc0">
+			<flags>2</flags>
+		</SENSENODEFUNC96>
+		<SENSENODEFUNC97 type="function" name="SENSE00007c90">
+			<flags>2</flags>
+		</SENSENODEFUNC97>
+		<SENSENODEFUNC98 type="function" name="SENSE00007d00">
+			<flags>2</flags>
+		</SENSENODEFUNC98>
+		<SENSENODEFUNC99 type="function" name="SENSE00007d70">
+			<flags>2</flags>
+		</SENSENODEFUNC99>
+		<SENSENODEFUNC100 type="function" name="SENSE00007fe0">
+			<flags>2</flags>
+		</SENSENODEFUNC100>
+		<SENSENODEFUNC101 type="function" name="SENSE00008390">
+			<flags>2</flags>
+		</SENSENODEFUNC101>
+		<SENSENODEFUNC102 type="function" name="SENSE00008850">
+			<flags>2</flags>
+		</SENSENODEFUNC102>
+		<SENSENODEFUNC103 type="function" name="SENSE000089d0">
+			<flags>2</flags>
+		</SENSENODEFUNC103>
+		<SENSENODEFUNC104 type="function" name="SENSE00008ad0">
+			<flags>2</flags>
+		</SENSENODEFUNC104>
+		<SENSENODEFUNC105 type="function" name="SENSE00008ca0">
+			<flags>2</flags>
+		</SENSENODEFUNC105>
+		<SENSENODEFUNC106 type="function" name="SENSE00008e70">
+			<flags>2</flags>
+		</SENSENODEFUNC106>
+		<SENSENODEFUNC107 type="function" name="SENSE00009660">
+			<flags>2</flags>
+		</SENSENODEFUNC107>
+		<SENSENODEFUNC108 type="function" name="SENSE00009ac0">
+			<flags>2</flags>
+		</SENSENODEFUNC108>
+		<SENSENODEFUNC109 type="function" name="SENSE00009c10">
+			<flags>2</flags>
+		</SENSENODEFUNC109>
+		<SENSENODEFUNC110 type="function" name="SENSE00009d20">
+			<flags>2</flags>
+		</SENSENODEFUNC110>
+		<SENSENODEFUNC111 type="function" name="SENSE00009e60">
+			<flags>2</flags>
+		</SENSENODEFUNC111>
+		<SENSENODEFUNC112 type="function" name="SENSE00009fa0">
+			<flags>2</flags>
+		</SENSENODEFUNC112>
+		<SENSENODEFUNC113 type="function" name="SENSE0000b010">
+			<flags>2</flags>
+		</SENSENODEFUNC113>
+		<SENSENODEFUNC114 type="function" name="SENSE0000c290">
+			<flags>2</flags>
+		</SENSENODEFUNC114>
+		<SENSENODEFUNC115 type="function" name="SENSE0000d300">
+			<flags>2</flags>
+		</SENSENODEFUNC115>
+		<SENSENODEFUNC116 type="function" name="SENSE0000e580">
+			<flags>2</flags>
+		</SENSENODEFUNC116>
+		<SENSENODEFUNC117 type="function" name="SENSE0000e740">
+			<flags>2</flags>
+		</SENSENODEFUNC117>
+		<SENSENODEFUNC118 type="function" name="SENSE0000e900">
+			<flags>2</flags>
+		</SENSENODEFUNC118>
+		<SENSENODEFUNC119 type="function" name="SENSE0000ead0">
+			<flags>2</flags>
+		</SENSENODEFUNC119>
+		<SENSENODEFUNC120 type="function" name="SENSE0000ecc0">
+			<flags>2</flags>
+		</SENSENODEFUNC120>
+		<SENSENODEFUNC121 type="function" name="SENSE0000ed30">
+			<flags>2</flags>
+		</SENSENODEFUNC121>
+		<SENSENODEFUNC122 type="function" name="SENSE0000ee90">
+			<flags>2</flags>
+		</SENSENODEFUNC122>
+		<SENSENODEFUNC123 type="function" name="SENSE0000eec0">
+			<flags>2</flags>
+		</SENSENODEFUNC123>
+		<SENSENODEFUNC124 type="function" name="SENSE0000ef90">
+			<flags>2</flags>
+		</SENSENODEFUNC124>
+		<SENSENODEFUNC125 type="function" name="SENSE0000f060">
+			<flags>2</flags>
+		</SENSENODEFUNC125>
+		<SENSENODEFUNC126 type="function" name="SENSE0000f310">
+			<flags>2</flags>
+		</SENSENODEFUNC126>
+		<SENSENODEFUNC127 type="function" name="SENSE0000f430">
+			<flags>2</flags>
+		</SENSENODEFUNC127>
+		<SENSENODEFUNC128 type="function" name="SENSE0000f530">
+			<flags>2</flags>
+		</SENSENODEFUNC128>
+		<SENSENODEFUNC129 type="function" name="SENSE0000f590">
+			<flags>2</flags>
+		</SENSENODEFUNC129>
+		<SENSENODEFUNC130 type="function" name="SENSE0000f890">
+			<flags>2</flags>
+		</SENSENODEFUNC130>
+		<SENSENODEFUNC131 type="function" name="SENSE0000f940">
+			<flags>2</flags>
+		</SENSENODEFUNC131>
+		<SENSENODEFUNC132 type="function" name="SENSE0000fd50">
+			<flags>2</flags>
+		</SENSENODEFUNC132>
+		<SENSENODEFUNC133 type="function" name="SENSE0000ffd0">
+			<flags>2</flags>
+		</SENSENODEFUNC133>
+		<SENSENODEFUNC134 type="function" name="SENSE00010100">
+			<flags>2</flags>
+		</SENSENODEFUNC134>
+		<SENSENODEFUNC135 type="function" name="SENSE00010160">
+			<flags>2</flags>
+		</SENSENODEFUNC135>
+		<SENSENODEFUNC136 type="function" name="SENSE00010200">
+			<flags>2</flags>
+		</SENSENODEFUNC136>
+		<SENSENODEFUNC137 type="function" name="SENSE000104e0">
+			<flags>2</flags>
+		</SENSENODEFUNC137>
+		<SENSENODEFUNC138 type="function" name="SENSE000107f0">
+			<flags>2</flags>
+		</SENSENODEFUNC138>
+		<SENSENODEFUNC139 type="function" name="SENSE00010b00">
+			<flags>2</flags>
+		</SENSENODEFUNC139>
+		<SENSENODEFUNC140 type="function" name="SENSE00010f10">
+			<flags>2</flags>
+		</SENSENODEFUNC140>
+		<SENSENODEFUNC141 type="function" name="SENSE000112b0">
+			<flags>2</flags>
+		</SENSENODEFUNC141>
+		<SENSENODEFUNC142 type="function" name="SENSE00011360">
+			<flags>2</flags>
+		</SENSENODEFUNC142>
+		<SENSENODEFUNC143 type="function" name="SENSE00011940">
+			<flags>2</flags>
+		</SENSENODEFUNC143>
+		<SENSENODEFUNC144 type="function" name="SENSE00011a50">
+			<flags>2</flags>
+		</SENSENODEFUNC144>
+		<SENSENODEFUNC145 type="function" name="SENSE00011c20">
+			<flags>2</flags>
+		</SENSENODEFUNC145>
+		<SENSENODEFUNC146 type="function" name="SENSE00012100">
+			<flags>2</flags>
+		</SENSENODEFUNC146>
+		<SENSENODEFUNC147 type="function" name="SENSE000134e0">
+			<flags>2</flags>
+		</SENSENODEFUNC147>
+		<SENSENODEFUNC148 type="function" name="SENSE000155e0">
+			<flags>2</flags>
+		</SENSENODEFUNC148>
+		<SENSENODEFUNC149 type="function" name="SENSE00016c20">
+			<flags>2</flags>
+		</SENSENODEFUNC149>
+		<SENSENODEFUNC150 type="function" name="SENSE00016d60">
+			<flags>2</flags>
+		</SENSENODEFUNC150>
+		<SENSENODEFUNC151 type="function" name="SENSE00016ee0">
+			<flags>2</flags>
+		</SENSENODEFUNC151>
+		<SENSENODEFUNC152 type="function" name="SENSE00017190">
+			<flags>2</flags>
+		</SENSENODEFUNC152>
+		<SENSENODEFUNC153 type="function" name="SENSE00017210">
+			<flags>2</flags>
+		</SENSENODEFUNC153>
+		<SENSENODEFUNC154 type="function" name="SENSE00017230">
+			<flags>2</flags>
+		</SENSENODEFUNC154>
+		<SENSENODEFUNC155 type="function" name="SENSE000174b0">
+			<flags>2</flags>
+		</SENSENODEFUNC155>
+		<SENSENODEFUNC156 type="function" name="SENSE00017930">
+			<flags>2</flags>
+		</SENSENODEFUNC156>
+		<SENSENODEFUNC157 type="function" name="SENSE0001795c">
+			<flags>2</flags>
+		</SENSENODEFUNC157>
+		<SENSENODEFUNC158 type="function" name="SENSE000179d0">
+			<flags>2</flags>
+		</SENSENODEFUNC158>
+		<SENSENODEFUNC159 type="function" name="SENSE00017a10">
+			<flags>2</flags>
+		</SENSENODEFUNC159>
+		<SENSENODEFUNC160 type="function" name="SENSE00017c70">
+			<flags>2</flags>
+		</SENSENODEFUNC160>
+		<SENSENODEFUNC161 type="function" name="SENSE00017d20">
+			<flags>2</flags>
+		</SENSENODEFUNC161>
+		<SENSENODEFUNC162 type="function" name="SENSE00017dd0">
+			<flags>2</flags>
+		</SENSENODEFUNC162>
+		<SENSENODEFUNC163 type="function" name="SENSE00017f50">
+			<flags>2</flags>
+		</SENSENODEFUNC163>
+		<SENSENODEFUNC164 type="function" name="SENSE00018220">
+			<flags>2</flags>
+		</SENSENODEFUNC164>
+		<SENSENODEFUNC165 type="function" name="SENSE000183e0">
+			<flags>2</flags>
+		</SENSENODEFUNC165>
+		<SENSENODEFUNC166 type="function" name="SENSE00018410">
+			<flags>2</flags>
+		</SENSENODEFUNC166>
+		<SENSENODEFUNC167 type="function" name="SENSE00018440">
+			<flags>2</flags>
+		</SENSENODEFUNC167>
+		<SENSENODEFUNC168 type="function" name="SENSE000184c0">
+			<flags>2</flags>
+		</SENSENODEFUNC168>
+		<SENSENODEFUNC169 type="function" name="SENSE00018650">
+			<flags>2</flags>
+		</SENSENODEFUNC169>
+		<SENSENODEFUNC170 type="function" name="SENSE00018820">
+			<flags>2</flags>
+		</SENSENODEFUNC170>
+		<SENSENODEFUNC171 type="function" name="SENSE00018960">
+			<flags>2</flags>
+		</SENSENODEFUNC171>
+		<SENSENODEFUNC172 type="function" name="SENSE00018ae0">
+			<flags>2</flags>
+		</SENSENODEFUNC172>
+		<SENSENODEFUNC173 type="function" name="SENSE00018ba0">
+			<flags>2</flags>
+		</SENSENODEFUNC173>
+		<SENSENODEFUNC174 type="function" name="SENSE00018ce0">
+			<flags>2</flags>
+		</SENSENODEFUNC174>
+		<SENSENODEFUNC175 type="function" name="SENSE00018d00">
+			<flags>2</flags>
+		</SENSENODEFUNC175>
+		<SENSENODEFUNC176 type="function" name="SENSE00018e80">
+			<flags>2</flags>
+		</SENSENODEFUNC176>
+		<SENSENODEFUNC177 type="function" name="SENSE00018ef0">
+			<flags>2</flags>
+		</SENSENODEFUNC177>
+		<SENSENODEFUNC178 type="function" name="SENSE00018f90">
+			<flags>2</flags>
+		</SENSENODEFUNC178>
+		<SENSENODEFUNC179 type="function" name="SENSE00018fb0">
+			<flags>2</flags>
+		</SENSENODEFUNC179>
+		<SENSENODEFUNC180 type="function" name="SENSE000190e0">
+			<flags>2</flags>
+		</SENSENODEFUNC180>
+		<SENSENODEFUNC181 type="function" name="SENSE00019130">
+			<flags>2</flags>
+		</SENSENODEFUNC181>
+		<SENSENODEFUNC182 type="function" name="SENSE00019180">
+			<flags>2</flags>
+		</SENSENODEFUNC182>
+		<SENSENODEFUNC183 type="function" name="SENSE000191a0">
+			<flags>2</flags>
+		</SENSENODEFUNC183>
+		<SENSENODEFUNC184 type="function" name="SENSE00019250">
+			<flags>2</flags>
+		</SENSENODEFUNC184>
+		<SENSENODEFUNC185 type="function" name="SENSE000192c0">
+			<flags>2</flags>
+		</SENSENODEFUNC185>
+		<SENSENODEFUNC186 type="function" name="SENSE000192f0">
+			<flags>2</flags>
+		</SENSENODEFUNC186>
+		<SENSENODEFUNC187 type="function" name="SENSE00019320">
+			<flags>2</flags>
+		</SENSENODEFUNC187>
+		<SENSENODEFUNC188 type="function" name="SENSE00019350">
+			<flags>2</flags>
+		</SENSENODEFUNC188>
+		<SENSENODEFUNC189 type="function" name="SENSE00019380">
+			<flags>2</flags>
+		</SENSENODEFUNC189>
+		<SENSENODEFUNC190 type="function" name="SENSE00019410">
+			<flags>2</flags>
+		</SENSENODEFUNC190>
+		<SENSENODEFUNC191 type="function" name="SENSE00019430">
+			<flags>2</flags>
+		</SENSENODEFUNC191>
+		<SENSENODEFUNC192 type="function" name="SENSE00019580">
+			<flags>2</flags>
+		</SENSENODEFUNC192>
+		<SENSENODEFUNC193 type="function" name="SENSE00019600">
+			<flags>2</flags>
+		</SENSENODEFUNC193>
+		<SENSENODEFUNC194 type="function" name="SENSE00019630">
+			<flags>2</flags>
+		</SENSENODEFUNC194>
+		<SENSENODEFUNC195 type="function" name="SENSE0001a0d0">
+			<flags>2</flags>
+		</SENSENODEFUNC195>
+		<SENSENODEFUNC196 type="function" name="SENSE0001a12c">
+			<flags>2</flags>
+		</SENSENODEFUNC196>
+		<SENSENODEFUNC197 type="function" name="SENSE0001a1c0">
+			<flags>2</flags>
+		</SENSENODEFUNC197>
+		<SENSENODEFUNC198 type="function" name="SENSE0001a1e0">
+			<flags>2</flags>
+		</SENSENODEFUNC198>
+		<SENSENODEFUNC199 type="function" name="SENSE0001a20c">
+			<flags>2</flags>
+		</SENSENODEFUNC199>
+		<SENSENODEFUNC200 type="function" name="SENSE0001a248">
+			<flags>2</flags>
+		</SENSENODEFUNC200>
+		<SENSENODEFUNC201 type="function" name="SENSE0001a284">
+			<flags>2</flags>
+		</SENSENODEFUNC201>
+		<SENSENODEFUNC202 type="function" name="SENSE0001a2c0">
+			<flags>2</flags>
+		</SENSENODEFUNC202>
+		<SENSENODEFUNC203 type="function" name="SENSE0001a34c">
+			<flags>2</flags>
+		</SENSENODEFUNC203>
+		<SENSENODEFUNC204 type="function" name="SENSE0001a3e4">
+			<flags>2</flags>
+		</SENSENODEFUNC204>
+		<SENSENODEFUNC205 type="function" name="SENSE0001a408">
+			<flags>2</flags>
+		</SENSENODEFUNC205>
+		<SENSENODEFUNC206 type="function" name="SENSE0001a434">
+			<flags>2</flags>
+		</SENSENODEFUNC206>
+		<SENSENODEFUNC207 type="function" name="SENSE0001a470">
+			<flags>2</flags>
+		</SENSENODEFUNC207>
+		<SENSENODEFUNC208 type="function" name="SENSE0001a488">
+			<flags>2</flags>
+		</SENSENODEFUNC208>
+		<SENSENODEFUNC209 type="function" name="SENSE0001a4f8">
+			<flags>2</flags>
+		</SENSENODEFUNC209>
+		<SENSENODEFUNC210 type="function" name="SENSE0001a564">
+			<flags>2</flags>
+		</SENSENODEFUNC210>
+		<SENSENODEFUNC211 type="function" name="SENSE0001a5d8">
+			<flags>2</flags>
+		</SENSENODEFUNC211>
+		<SENSENODEFUNC212 type="function" name="SENSE0001a8a4">
+			<flags>2</flags>
+		</SENSENODEFUNC212>
+		<SENSENODEFUNC213 type="function" name="SENSE0001a95c">
+			<flags>2</flags>
+		</SENSENODEFUNC213>
+		<SENSENODEFUNC214 type="function" name="SENSE0001a96c">
+			<flags>2</flags>
+		</SENSENODEFUNC214>
+		<SENSENODEFUNC215 type="function" name="SENSE0001a988">
+			<flags>2</flags>
+		</SENSENODEFUNC215>
+		<SENSENODEFUNC216 type="function" name="SENSE0001aafc">
+			<flags>2</flags>
+		</SENSENODEFUNC216>
+		<SENSENODEFUNC217 type="function" name="SENSE0001ab18">
+			<flags>2</flags>
+		</SENSENODEFUNC217>
+		<SENSENODEFUNC218 type="function" name="SENSE0001ab4c">
+			<flags>2</flags>
+		</SENSENODEFUNC218>
+		<SENSENODEFUNC219 type="function" name="SENSE0001ac20">
+			<flags>2</flags>
+		</SENSENODEFUNC219>
+		<SENSENODEFUNC220 type="function" name="SENSE0001ac94">
+			<flags>2</flags>
+		</SENSENODEFUNC220>
+		<SENSENODEFUNC221 type="function" name="SENSE0001acb4">
+			<flags>2</flags>
+		</SENSENODEFUNC221>
+		<SENSENODEFUNC222 type="function" name="SENSE0001acd4">
+			<flags>2</flags>
+		</SENSENODEFUNC222>
+		<SENSENODEFUNC223 type="function" name="SENSE0001ad10">
+			<flags>2</flags>
+		</SENSENODEFUNC223>
+		<SENSENODEFUNC224 type="function" name="SENSE0001ae58">
+			<flags>2</flags>
+		</SENSENODEFUNC224>
+		<SENSENODEFUNC225 type="function" name="SENSE0001aea0">
+			<flags>2</flags>
+		</SENSENODEFUNC225>
+		<SENSENODEFUNC226 type="function" name="SENSE0001af04">
+			<flags>2</flags>
+		</SENSENODEFUNC226>
+		<SENSENODEFUNC227 type="function" name="SENSE0001af60">
+			<flags>2</flags>
+		</SENSENODEFUNC227>
+		<SENSENODEFUNC228 type="function" name="SENSE0001b034">
+			<flags>2</flags>
+		</SENSENODEFUNC228>
+		<SENSENODEFUNC229 type="function" name="SENSE0001b06c">
+			<flags>2</flags>
+		</SENSENODEFUNC229>
+		<SENSENODEFUNC230 type="function" name="SENSE0001b0a8">
+			<flags>2</flags>
+		</SENSENODEFUNC230>
+		<SENSENODEFUNC231 type="function" name="SENSE0001b1d0">
+			<flags>2</flags>
+		</SENSENODEFUNC231>
+		<SENSENODEFUNC232 type="function" name="SENSE0001b4a0">
+			<flags>2</flags>
+		</SENSENODEFUNC232>
+		<SENSENODEFUNC233 type="function" name="SENSE0001b4c0">
+			<flags>2</flags>
+		</SENSENODEFUNC233>
+		<SENSENODEFUNC234 type="function" name="SENSE0001b500">
+			<flags>2</flags>
+		</SENSENODEFUNC234>
+		<SENSENODEFUNC235 type="function" name="SENSE0001b520">
+			<flags>2</flags>
+		</SENSENODEFUNC235>
+		<SENSENODEFUNC236 type="function" name="SENSE0001b5a0">
+			<flags>2</flags>
+		</SENSENODEFUNC236>
+		<SENSENODEFUNC237 type="function" name="SENSE0001b5f0">
+			<flags>2</flags>
+		</SENSENODEFUNC237>
+		<SENSENODEFUNC238 type="function" name="SENSE0001b610">
+			<flags>2</flags>
+		</SENSENODEFUNC238>
+		<SENSENODEFUNC239 type="function" name="SENSE0001b650">
+			<flags>2</flags>
+		</SENSENODEFUNC239>
+		<SENSENODEFUNC240 type="function" name="SENSE0001b7a0">
+			<flags>2</flags>
+		</SENSENODEFUNC240>
+		<SENSENODEFUNC241 type="function" name="SENSE0001b820">
+			<flags>2</flags>
+		</SENSENODEFUNC241>
+		<SENSENODEFUNC242 type="function" name="SENSE0001b840">
+			<flags>2</flags>
+		</SENSENODEFUNC242>
+		<SENSENODEFUNC243 type="function" name="SENSE0001b8a0">
+			<flags>2</flags>
+		</SENSENODEFUNC243>
+		<SENSENODEFUNC244 type="function" name="SENSE0001b900">
+			<flags>2</flags>
+		</SENSENODEFUNC244>
+		<SENSENODEFUNC245 type="function" name="SENSE0001b970">
+			<flags>2</flags>
+		</SENSENODEFUNC245>
+		<SENSENODEFUNC246 type="function" name="SENSE0001b990">
+			<flags>2</flags>
+		</SENSENODEFUNC246>
+		<SENSENODEFUNC247 type="function" name="SENSE0001b9b0">
+			<flags>2</flags>
+		</SENSENODEFUNC247>
+		<SENSENODEFUNC248 type="function" name="SENSE0001b9d0">
+			<flags>2</flags>
+		</SENSENODEFUNC248>
+		<SENSENODEFUNC249 type="function" name="SENSE0001b9e0">
+			<flags>2</flags>
+		</SENSENODEFUNC249>
+		<SENSENODEFUNC250 type="function" name="SENSE0001b9f0">
+			<flags>2</flags>
+		</SENSENODEFUNC250>
+		<SENSENODEFUNC251 type="function" name="SENSE0001ba10">
+			<flags>2</flags>
+		</SENSENODEFUNC251>
+		<SENSENODEFUNC252 type="function" name="SENSE0001ba60">
+			<flags>2</flags>
+		</SENSENODEFUNC252>
+		<SENSENODEFUNC253 type="function" name="SENSE0001ba80">
+			<flags>2</flags>
+		</SENSENODEFUNC253>
+		<SENSENODEFUNC254 type="function" name="SENSE0001bad0">
+			<flags>2</flags>
+		</SENSENODEFUNC254>
+		<SENSENODEFUNC255 type="function" name="SENSE0001bb00">
+			<flags>2</flags>
+		</SENSENODEFUNC255>
+		<SENSENODEFUNC256 type="function" name="SENSE0001bc20">
+			<flags>2</flags>
+		</SENSENODEFUNC256>
+		<SENSENODEFUNC257 type="function" name="SENSE0001bcb0">
+			<flags>2</flags>
+		</SENSENODEFUNC257>
+		<SENSENODEFUNC258 type="function" name="SENSE0001bce0">
+			<flags>2</flags>
+		</SENSENODEFUNC258>
+		<SENSENODEFUNC259 type="function" name="SENSE0001bd20">
+			<flags>2</flags>
+		</SENSENODEFUNC259>
+		<SENSENODEFUNC260 type="function" name="SENSE0001bd40">
+			<flags>2</flags>
+		</SENSENODEFUNC260>
+		<SENSENODEFUNC261 type="function" name="SENSE0001bd70">
+			<flags>2</flags>
+		</SENSENODEFUNC261>
+		<SENSENODEFUNC262 type="function" name="SENSE0001bda0">
+			<flags>2</flags>
+		</SENSENODEFUNC262>
+		<SENSENODEFUNC263 type="function" name="SENSE0001be50">
+			<flags>2</flags>
+		</SENSENODEFUNC263>
+		<SENSENODEFUNC264 type="function" name="SENSE0001bf30">
+			<flags>2</flags>
+		</SENSENODEFUNC264>
+		<SENSENODEFUNC265 type="function" name="SENSE0001bf60">
+			<flags>2</flags>
+		</SENSENODEFUNC265>
+		<SENSENODEFUNC266 type="function" name="SENSE0001bf90">
+			<flags>2</flags>
+		</SENSENODEFUNC266>
+		<SENSENODEFUNC267 type="function" name="SENSE0001bff0">
+			<flags>2</flags>
+		</SENSENODEFUNC267>
+		<SENSENODEFUNC268 type="function" name="SENSE0001c2e0">
+			<flags>2</flags>
+		</SENSENODEFUNC268>
+		<SENSENODEFUNC269 type="function" name="SENSE0001c340">
+			<flags>2</flags>
+		</SENSENODEFUNC269>
+		<SENSENODEFUNC270 type="function" name="SENSE0001c380">
+			<flags>2</flags>
+		</SENSENODEFUNC270>
+		<SENSENODEFUNC271 type="function" name="SENSE0001c400">
+			<flags>2</flags>
+		</SENSENODEFUNC271>
+		<SENSENODEFUNC272 type="function" name="SENSE0001c460">
+			<flags>2</flags>
+		</SENSENODEFUNC272>
+		<SENSENODEFUNC273 type="function" name="SENSE0001c570">
+			<flags>2</flags>
+		</SENSENODEFUNC273>
+		<SENSENODEFUNC274 type="function" name="SENSE0001c590">
+			<flags>2</flags>
+		</SENSENODEFUNC274>
+		<SENSENODEFUNC275 type="function" name="SENSE0001c5b0">
+			<flags>2</flags>
+		</SENSENODEFUNC275>
+		<SENSENODEFUNC276 type="function" name="SENSE0001c5d0">
+			<flags>2</flags>
+		</SENSENODEFUNC276>
+		<SENSENODEFUNC277 type="function" name="SENSE0001c5f0">
+			<flags>2</flags>
+		</SENSENODEFUNC277>
+		<SENSENODEFUNC278 type="function" name="SENSE0001c8b0">
+			<flags>2</flags>
+		</SENSENODEFUNC278>
+		<SENSENODEFUNC279 type="function" name="SENSE0001c9c0">
+			<flags>2</flags>
+		</SENSENODEFUNC279>
+		<SENSENODEFUNC280 type="function" name="SENSE0001ca50">
+			<flags>2</flags>
+		</SENSENODEFUNC280>
+		<SENSENODEFUNC281 type="function" name="SENSE0001cae0">
+			<flags>2</flags>
+		</SENSENODEFUNC281>
+		<SENSENODEFUNC282 type="function" name="SENSE0001cb0c">
+			<flags>2</flags>
+		</SENSENODEFUNC282>
+		<SENSENODEFUNC283 type="function" name="SENSE0001cb24">
+			<flags>2</flags>
+		</SENSENODEFUNC283>
+		<SENSENODEFUNC284 type="function" name="SENSE0001cb50">
+			<flags>2</flags>
+		</SENSENODEFUNC284>
+		<SENSENODEFUNC285 type="function" name="SENSE0001cb7c">
+			<flags>2</flags>
+		</SENSENODEFUNC285>
+		<SENSENODEFUNC286 type="function" name="SENSE0001cbdb">
+			<flags>2</flags>
+		</SENSENODEFUNC286>
+		<SENSENODEFUNC287 type="function" name="SENSE0001cc50">
+			<flags>2</flags>
+		</SENSENODEFUNC287>
+	</function>
+</ssprotect>
