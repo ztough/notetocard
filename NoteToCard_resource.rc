@@ -1,6 +1,6 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	"E:\\OpenSource\\notetocard\\logo.ico"
+IDI_ICON1	ICON	"E:\\ZTough\\NoteToCard\\NoteToCard\\logo.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0
