@@ -4,4 +4,3 @@ NoteToCard是一款Markdown笔记实时生成记忆闪卡的应用。此应用�
 ## [QQ交流群：707617139](https://qm.qq.com/cgi-bin/qm/qr?k=Bvs2uQxc0rCDzn0Wklaw76wfUdxO1dV2&jump_from=webapi&authKey=vTkp0Nojj6owKfLwmPCRWSc2qdkUzP5FLmhU9SIdkSoR8pp4i/PinyGmh5rxfO8m)
 ## 感谢支持
 ![](https://ztough-1308253351.cos.ap-nanjing.myqcloud.com//wx.png)
-![](https://ztough-1308253351.cos.ap-nanjing.myqcloud.com//zfb.jpg)
